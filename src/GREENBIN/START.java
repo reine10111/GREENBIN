@@ -2,10 +2,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package START;
-
-import javax.swing.JOptionPane;
-
+package GREENBIN;
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 /**
  *
  * @author Precifil
@@ -111,7 +111,8 @@ public class START extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void getstartedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_getstartedActionPerformed
-        JOptionPane.showMessageDialog(this, "Hello World");
+        LOGIN loginFrame = new LOGIN();
+        loginFrame.setVisible(true);
     }//GEN-LAST:event_getstartedActionPerformed
 
     /**

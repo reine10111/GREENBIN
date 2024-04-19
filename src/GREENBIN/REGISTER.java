@@ -74,6 +74,11 @@ public class REGISTER extends javax.swing.JFrame {
         SIGNUP.setForeground(new java.awt.Color(255, 255, 255));
         SIGNUP.setText("SIGNUP");
         SIGNUP.setBorder(null);
+        SIGNUP.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SIGNUPActionPerformed(evt);
+            }
+        });
 
         jPasswordField1.setBackground(new java.awt.Color(217, 217, 217));
         jPasswordField1.setText("jPasswordField1");
@@ -172,6 +177,10 @@ public class REGISTER extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jPasswordField1ActionPerformed
 
+    private void SIGNUPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SIGNUPActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SIGNUPActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -208,15 +217,15 @@ public class REGISTER extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField Email;
+    public javax.swing.JTextField Email;
     private javax.swing.JButton SIGNUP;
-    private javax.swing.JTextField Username;
+    public javax.swing.JTextField Username;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPasswordField jPasswordField1;
-    private javax.swing.JPasswordField jPasswordField2;
+    public javax.swing.JPasswordField jPasswordField1;
+    public javax.swing.JPasswordField jPasswordField2;
     // End of variables declaration//GEN-END:variables
 }

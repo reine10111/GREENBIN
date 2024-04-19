@@ -113,6 +113,7 @@ public class START extends javax.swing.JFrame {
     private void getstartedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_getstartedActionPerformed
         LOGIN loginFrame = new LOGIN();
         loginFrame.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_getstartedActionPerformed
 
     /**

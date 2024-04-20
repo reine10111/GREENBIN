@@ -2,8 +2,16 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package GREENBIN;
+package LOGINandSIGNUP;
 
+
+import java.sql.Connection;
+
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 /**
  *
  * @author Precifil
@@ -32,10 +40,12 @@ public class REGISTER extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         ConfirmPassword = new javax.swing.JTextField();
-        Username = new javax.swing.JTextField();
+        rUsername = new javax.swing.JTextField();
         Email = new javax.swing.JTextField();
         Password = new javax.swing.JTextField();
         SIGNUP = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
+        login = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -60,12 +70,12 @@ public class REGISTER extends javax.swing.JFrame {
             }
         });
 
-        Username.setBackground(new java.awt.Color(217, 217, 217));
-        Username.setFont(new java.awt.Font("Segoe UI Variable", 0, 18)); // NOI18N
-        Username.setText("Username");
-        Username.addActionListener(new java.awt.event.ActionListener() {
+        rUsername.setBackground(new java.awt.Color(217, 217, 217));
+        rUsername.setFont(new java.awt.Font("Segoe UI Variable", 0, 18)); // NOI18N
+        rUsername.setText("Username");
+        rUsername.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                UsernameActionPerformed(evt);
+                rUsernameActionPerformed(evt);
             }
         });
 
@@ -88,9 +98,23 @@ public class REGISTER extends javax.swing.JFrame {
         });
 
         SIGNUP.setBackground(new java.awt.Color(55, 185, 67));
-        SIGNUP.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        SIGNUP.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         SIGNUP.setForeground(new java.awt.Color(255, 255, 255));
         SIGNUP.setText("SIGNUP");
+        SIGNUP.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SIGNUPActionPerformed(evt);
+            }
+        });
+
+        jLabel5.setText("Already have an account?");
+
+        login.setText("LOGIN");
+        login.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                loginActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -110,15 +134,19 @@ public class REGISTER extends javax.swing.JFrame {
                     .addComponent(jLabel1)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(42, 42, 42)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(Email, javax.swing.GroupLayout.PREFERRED_SIZE, 301, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Username, javax.swing.GroupLayout.PREFERRED_SIZE, 301, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(rUsername, javax.swing.GroupLayout.PREFERRED_SIZE, 301, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(Password, javax.swing.GroupLayout.PREFERRED_SIZE, 301, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(ConfirmPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 301, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(ConfirmPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 301, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel5)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(login)))))
                 .addGap(0, 47, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(83, 83, 83)
-                .addComponent(SIGNUP, javax.swing.GroupLayout.PREFERRED_SIZE, 213, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(101, 101, 101)
+                .addComponent(SIGNUP, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -130,16 +158,20 @@ public class REGISTER extends javax.swing.JFrame {
                     .addComponent(jLabel3)
                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, Short.MAX_VALUE)
-                .addComponent(Username, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(rUsername, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(41, 41, 41)
                 .addComponent(Email, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(42, 42, 42)
                 .addComponent(Password, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(45, 45, 45)
                 .addComponent(ConfirmPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(29, 29, 29)
-                .addComponent(SIGNUP, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(78, 78, 78)
+                .addGap(27, 27, 27)
+                .addComponent(SIGNUP, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(32, 32, 32)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
+                    .addComponent(login))
+                .addGap(27, 27, 27)
                 .addComponent(jLabel2))
         );
 
@@ -162,9 +194,9 @@ public class REGISTER extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_ConfirmPasswordActionPerformed
 
-    private void UsernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UsernameActionPerformed
+    private void rUsernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rUsernameActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_UsernameActionPerformed
+    }//GEN-LAST:event_rUsernameActionPerformed
 
     private void EmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EmailActionPerformed
         // TODO add your handling code here:
@@ -173,6 +205,35 @@ public class REGISTER extends javax.swing.JFrame {
     private void PasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PasswordActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_PasswordActionPerformed
+
+    private void SIGNUPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SIGNUPActionPerformed
+        // TODO add your handling code here:
+        
+        String rusername = rUsername.getText();
+        String email = Email.getText();
+
+        String password = Password.getText();
+        String confirm_password = ConfirmPassword.getText();
+
+        boolean passwordsMatch = checkPasswordMatch(password, confirm_password);
+        
+        if (!passwordsMatch){
+            JOptionPane.showMessageDialog(this, "Password and Confirm Password do not match.", "Error", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+        if(rusername.isEmpty() || email.isEmpty() || password.isEmpty() || confirm_password.isEmpty()){
+            JOptionPane.showMessageDialog(this, "Username / Password should not be empty.", "Error", JOptionPane.ERROR_MESSAGE);
+        }else {
+            userRegister(rusername, email, password, confirm_password);
+        }
+        
+    }//GEN-LAST:event_SIGNUPActionPerformed
+
+    private void loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginActionPerformed
+        // TODO add your handling code here:
+        LOGIN loginFrame = new LOGIN();
+        loginFrame.setVisible(true);
+    }//GEN-LAST:event_loginActionPerformed
 
     /**
      * @param args the command line arguments
@@ -214,11 +275,54 @@ public class REGISTER extends javax.swing.JFrame {
     private javax.swing.JTextField Email;
     private javax.swing.JTextField Password;
     private javax.swing.JButton SIGNUP;
-    private javax.swing.JTextField Username;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton login;
+    private javax.swing.JTextField rUsername;
     // End of variables declaration//GEN-END:variables
+
+    private boolean checkPasswordMatch(String password, String confirm_password) {
+        return password.equals(confirm_password);
+    }
+
+    private void userRegister(String rusername, String email, String password, String confirm_password) {
+        Connection dbconn = DBConnection.connectDB();
+        if(dbconn != null){
+        try{
+            String query = ("INSERT INTO users(username, email, password)VALUES(?, ?, ?)");
+
+            PreparedStatement st = dbconn.prepareStatement(query);
+        
+            
+            st.setString(1, rusername);
+            st.setString(2, email);
+            st.setString(3, password);
+            int rowsAffected = st.executeUpdate();
+
+            if(rowsAffected > 0){
+       
+                dispose();
+                LOGIN loginFrame = new LOGIN();
+                loginFrame.setVisible(true);
+                JOptionPane.showMessageDialog(this, "User Data Inserted", "Success", JOptionPane.INFORMATION_MESSAGE);
+
+        }else{
+            JOptionPane.showMessageDialog(this, "Please try again.", "Error", JOptionPane.ERROR_MESSAGE);
+
+                }
+        st.close();
+        dbconn.close();
+        
+        }catch (SQLException ex) {
+                Logger.getLogger(LOGIN.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        }else{
+            System.out.println("The connection is not available.");
+        }
+    }
 }
+

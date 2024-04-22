@@ -77,7 +77,7 @@ public class HOME extends javax.swing.JFrame {
         jButton1.setBackground(new java.awt.Color(242, 242, 242));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/Add Product.png"))); // NOI18N
         jButton1.setBorder(null);
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 700, -1, -1));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 250, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

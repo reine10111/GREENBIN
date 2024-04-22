@@ -104,16 +104,18 @@ public class LOGIN extends javax.swing.JFrame {
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/user.png"))); // NOI18N
         jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 540, 20, 20));
 
-        jLabel7.setText("I don't have an account");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 700, -1, -1));
+        jLabel7.setText("I don't have an account.");
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 700, -1, -1));
 
-        Signup.setText("SignUp");
+        Signup.setForeground(new java.awt.Color(0, 51, 255));
+        Signup.setText("SIGN UP");
+        Signup.setBorder(null);
         Signup.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SignupActionPerformed(evt);
             }
         });
-        jPanel1.add(Signup, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 700, -1, -1));
+        jPanel1.add(Signup, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 700, -1, -1));
 
         jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/password.png"))); // NOI18N
         jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 610, -1, -1));

@@ -17,6 +17,7 @@ public class START extends javax.swing.JFrame {
      * Creates new form START
      */
     public START() {
+        setUndecorated(true);
         initComponents();
     }
 
@@ -46,11 +47,11 @@ public class START extends javax.swing.JFrame {
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/StartImg.png"))); // NOI18N
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI Black", 1, 48)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Artifakt Element Black", 1, 48)); // NOI18N
         jLabel4.setText("GreenBin");
 
         getstarted.setBackground(new java.awt.Color(55, 185, 67));
-        getstarted.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        getstarted.setFont(new java.awt.Font("Artifakt Element Black", 0, 18)); // NOI18N
         getstarted.setForeground(new java.awt.Color(255, 255, 255));
         getstarted.setText("GET STARTED");
         getstarted.addActionListener(new java.awt.event.ActionListener() {
@@ -92,7 +93,7 @@ public class START extends javax.swing.JFrame {
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(getstarted)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 111, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 109, Short.MAX_VALUE)
                 .addComponent(jLabel2))
         );
 
@@ -114,6 +115,7 @@ public class START extends javax.swing.JFrame {
     private void getstartedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_getstartedActionPerformed
         LOGIN loginFrame = new LOGIN();
         loginFrame.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_getstartedActionPerformed
 
     /**

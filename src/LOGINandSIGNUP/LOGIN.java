@@ -47,12 +47,12 @@ public class LOGIN extends javax.swing.JFrame {
         Password = new javax.swing.JPasswordField();
         jLabel12 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        Signup = new javax.swing.JButton();
         jLabel13 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
         jLabel4.setText("GreenBin");
@@ -107,18 +107,14 @@ public class LOGIN extends javax.swing.JFrame {
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/user.png"))); // NOI18N
         jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 540, 20, 20));
 
-        jLabel7.setText("I don't have an account.");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 700, -1, -1));
-
-        Signup.setForeground(new java.awt.Color(0, 51, 255));
-        Signup.setText("SIGN UP");
-        Signup.setBorder(null);
-        Signup.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SignupActionPerformed(evt);
+        jLabel7.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel7.setText("SIGNUP");
+        jLabel7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel7MouseClicked(evt);
             }
         });
-        jPanel1.add(Signup, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 700, -1, -1));
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 700, -1, -1));
 
         jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/password.png"))); // NOI18N
         jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 610, -1, -1));
@@ -138,6 +134,9 @@ public class LOGIN extends javax.swing.JFrame {
         jLabel11.setFont(new java.awt.Font("Arial Narrow", 0, 12)); // NOI18N
         jLabel11.setText("Username");
         jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 510, 120, 20));
+
+        jLabel14.setText("I don't have an account.");
+        jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 700, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -171,11 +170,14 @@ public class LOGIN extends javax.swing.JFrame {
        
     }//GEN-LAST:event_LOGINBUTTONActionPerformed
 
-    private void SignupActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SignupActionPerformed
-        // TODO add your handling code here:
-        REGISTER registerFrame = new REGISTER();
-        registerFrame.setVisible(true);
-    }//GEN-LAST:event_SignupActionPerformed
+    private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
+        REGISTER reg = new REGISTER ();
+        reg.setVisible (true) ;
+        reg.pack();
+        reg.setLocationRelativeTo(null);
+        reg.setDefaultCloseOperation (REGISTER.EXIT_ON_CLOSE);
+        this.dispose();
+    }//GEN-LAST:event_jLabel7MouseClicked
 
     /**
      * @param args the command line arguments
@@ -215,13 +217,13 @@ public class LOGIN extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton LOGINBUTTON;
     private javax.swing.JPasswordField Password;
-    private javax.swing.JButton Signup;
     private javax.swing.JTextField Username;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

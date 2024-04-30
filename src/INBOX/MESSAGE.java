@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package INBOX;
-
+import HOME.HOME;
 /**
  *
  * @author JOEY SALOZA
@@ -26,21 +26,100 @@ public class MESSAGE extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel2 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jName = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jMessage = new javax.swing.JTextField();
+        jPicture = new javax.swing.JLabel();
+        jSent = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jMsg_area = new javax.swing.JTextArea();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanel2.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/INBOX/icons/image 2.png"))); // NOI18N
+        jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel3MouseClicked(evt);
+            }
+        });
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, -1, -1));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/INBOX/icons/shapes.png"))); // NOI18N
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        jLabel5.setText("jLabel5");
+        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 70, -1, 20));
+
+        jName.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 36)); // NOI18N
+        jName.setText("jLabel3");
+        jPanel2.add(jName, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 30, 130, 70));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/INBOX/icons/Rectangle 5.png"))); // NOI18N
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        jMessage.setBackground(new java.awt.Color(210, 217, 209));
+        jMessage.setFont(new java.awt.Font("Microsoft Sans Serif", 0, 18)); // NOI18N
+        jMessage.setForeground(new java.awt.Color(153, 153, 153));
+        jMessage.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        jMessage.setText("Send Messages...");
+        jMessage.setToolTipText("");
+        jMessage.setBorder(null);
+        jMessage.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMessageActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jMessage, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 680, 240, 40));
+
+        jPicture.setIcon(new javax.swing.ImageIcon(getClass().getResource("/INBOX/icons/Img_load_box_fill.png"))); // NOI18N
+        jPanel2.add(jPicture, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 680, -1, -1));
+
+        jSent.setIcon(new javax.swing.ImageIcon(getClass().getResource("/INBOX/icons/Send_fill.png"))); // NOI18N
+        jPanel2.add(jSent, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 680, -1, -1));
+
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/INBOX/icons/Rectangle 63.png"))); // NOI18N
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 670, -1, -1));
+
+        jMsg_area.setColumns(20);
+        jMsg_area.setRows(5);
+        jScrollPane1.setViewportView(jMsg_area);
+
+        jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 350, 510));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        pack();
+        setSize(new java.awt.Dimension(406, 808));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jMessageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMessageActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMessageActionPerformed
+
+    private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
+        // TODO add your handling code here:
+        HOME homeFrame = new HOME();
+        homeFrame.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jLabel3MouseClicked
 
     /**
      * @param args the command line arguments
@@ -78,5 +157,17 @@ public class MESSAGE extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JTextField jMessage;
+    private static javax.swing.JTextArea jMsg_area;
+    private javax.swing.JLabel jName;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JLabel jPicture;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel jSent;
     // End of variables declaration//GEN-END:variables
 }

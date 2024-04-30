@@ -3,7 +3,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package HOME;
-
+import INBOX.MESSAGE;
+import ADD_PRODUCT.ADD_PRODUCT;
+import PROFILE.PROFILE;
 /**
  *
  * @author JOEY SALOZA
@@ -16,7 +18,10 @@ public class HOME extends javax.swing.JFrame {
     public HOME() {
         setUndecorated(true);
         initComponents();
+        jFront.setVisible(true);
+        jAbout.setVisible(false);
     }
+
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -27,81 +32,163 @@ public class HOME extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jButton2 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jLabel5 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
+        jHome = new javax.swing.JLabel();
+        jProfile = new javax.swing.JLabel();
+        jAboutUs = new javax.swing.JLabel();
+        jMessage = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jAdd = new javax.swing.JLabel();
+        jAbout = new javax.swing.JPanel();
+        jFront = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/shapes.png"))); // NOI18N
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 340, -1, -1));
-
-        jButton2.setBackground(new java.awt.Color(55, 185, 67));
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/User_circle.png"))); // NOI18N
-        jButton2.setBorder(null);
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+        jHome.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/Home Button.png"))); // NOI18N
+        jHome.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jHomeMouseClicked(evt);
             }
         });
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 800, -1, -1));
+        jPanel2.add(jHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 710, -1, -1));
 
-        jButton4.setBackground(new java.awt.Color(55, 185, 67));
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/about us.png"))); // NOI18N
-        jButton4.setBorder(null);
-        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 800, -1, -1));
+        jProfile.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/User_circle.png"))); // NOI18N
+        jProfile.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jProfileMouseClicked(evt);
+            }
+        });
+        jPanel2.add(jProfile, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 710, -1, -1));
 
-        jButton3.setBackground(new java.awt.Color(55, 185, 67));
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/Home Button.png"))); // NOI18N
-        jButton3.setToolTipText("");
-        jButton3.setBorder(null);
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 800, -1, -1));
+        jAboutUs.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/about us.png"))); // NOI18N
+        jAboutUs.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jAboutUsMouseClicked(evt);
+            }
+        });
+        jPanel2.add(jAboutUs, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 710, -1, -1));
 
-        jButton5.setBackground(new java.awt.Color(55, 185, 67));
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/msg_button.png"))); // NOI18N
-        jButton5.setBorder(null);
-        jPanel1.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 800, -1, -1));
+        jMessage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/msg_button.png"))); // NOI18N
+        jMessage.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jMessageMouseClicked(evt);
+            }
+        });
+        jPanel2.add(jMessage, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 710, -1, -1));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/Group 16.png"))); // NOI18N
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 780, 470, 60));
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/Group 16.png"))); // NOI18N
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 700, -1, -1));
 
-        jButton1.setBackground(new java.awt.Color(242, 242, 242));
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/Add Product.png"))); // NOI18N
-        jButton1.setBorder(null);
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 250, -1, -1));
+        jAdd.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jAdd.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/Add Product.png"))); // NOI18N
+        jAdd.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jAddMouseClicked(evt);
+            }
+        });
+        jPanel2.add(jAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 630, 100, 100));
+
+        jAbout.setBackground(new java.awt.Color(255, 102, 204));
+
+        javax.swing.GroupLayout jAboutLayout = new javax.swing.GroupLayout(jAbout);
+        jAbout.setLayout(jAboutLayout);
+        jAboutLayout.setHorizontalGroup(
+            jAboutLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 390, Short.MAX_VALUE)
+        );
+        jAboutLayout.setVerticalGroup(
+            jAboutLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 740, Short.MAX_VALUE)
+        );
+
+        jPanel2.add(jAbout, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 390, 740));
+
+        jFront.setBackground(new java.awt.Color(255, 51, 51));
+
+        javax.swing.GroupLayout jFrontLayout = new javax.swing.GroupLayout(jFront);
+        jFront.setLayout(jFrontLayout);
+        jFrontLayout.setHorizontalGroup(
+            jFrontLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 390, Short.MAX_VALUE)
+        );
+        jFrontLayout.setVerticalGroup(
+            jFrontLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 731, Short.MAX_VALUE)
+        );
+
+        jPanel2.add(jFront, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        setSize(new java.awt.Dimension(404, 851));
+        setSize(new java.awt.Dimension(406, 758));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void jHomeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jHomeMouseClicked
+        jFront.setVisible(true);
+        jAbout.setVisible(false);
+        HOME homeFrame = new HOME();
+        homeFrame.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jHomeMouseClicked
+
+    private void jMessageMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMessageMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+        jFront.setVisible(false);
+        jAbout.setVisible(false);
+        MESSAGE inboxFrame = new MESSAGE();
+        inboxFrame.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jMessageMouseClicked
+
+    private void jAddMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jAddMouseClicked
+        // TODO add your handling code here:
+        jFront.setVisible(false);
+        jAbout.setVisible(false);
+        ADD_PRODUCT addFrame = new ADD_PRODUCT();
+        addFrame.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jAddMouseClicked
+
+    private void jProfileMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jProfileMouseClicked
+        // TODO add your handling code here:
+        jFront.setVisible(false);
+        jAbout.setVisible(false);
+        PROFILE profileFrame = new PROFILE();
+        profileFrame.setVisible(true);
+        this.dispose();
+        
+    }//GEN-LAST:event_jProfileMouseClicked
+
+    private void jAboutUsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jAboutUsMouseClicked
+        // TODO add your handling code here:
+        jFront.setVisible(false);
+        jAbout.setVisible(true);
+
+    }//GEN-LAST:event_jAboutUsMouseClicked
 
     /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
+        
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
@@ -134,14 +221,14 @@ public class HOME extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JPanel jAbout;
+    private javax.swing.JLabel jAboutUs;
+    private javax.swing.JLabel jAdd;
+    private javax.swing.JPanel jFront;
+    private javax.swing.JLabel jHome;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jMessage;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JLabel jProfile;
     // End of variables declaration//GEN-END:variables
 }

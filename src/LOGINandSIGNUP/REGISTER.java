@@ -326,39 +326,68 @@ public class REGISTER extends javax.swing.JFrame {
     }
 
     private void userRegister(String rusername, String email, String password, String confirm_password) {
-        Connection dbconn = DBConnection.connectDB();
-        if(dbconn != null){
-        try{
-            String query = ("INSERT INTO users(username, email, password)VALUES(?, ?, ?)");
-
+    Connection dbconn = DBConnection.connectDB();
+    if (dbconn != null) {
+        try {
+            String query = "INSERT INTO users(username, email, password) VALUES (?, ?, ?)";
             PreparedStatement st = dbconn.prepareStatement(query);
-        
-            
+
             st.setString(1, rusername);
             st.setString(2, email);
             st.setString(3, password);
+
             int rowsAffected = st.executeUpdate();
 
-            if(rowsAffected > 0){
-       
+            if (rowsAffected > 0) {
                 dispose();
                 LOGIN loginFrame = new LOGIN();
                 loginFrame.setVisible(true);
                 JOptionPane.showMessageDialog(this, "User Data Inserted", "Success", JOptionPane.INFORMATION_MESSAGE);
+            } else {
+                JOptionPane.showMessageDialog(this, "Please try again.", "Error", JOptionPane.ERROR_MESSAGE);
+            }
 
-        }else{
-            JOptionPane.showMessageDialog(this, "Please try again.", "Error", JOptionPane.ERROR_MESSAGE);
-
-                }
-        st.close();
-        dbconn.close();
-        
-        }catch (SQLException ex) {
-                Logger.getLogger(LOGIN.class.getName()).log(Level.SEVERE, null, ex);
+            st.close();
+            dbconn.close();
+        } catch (SQLException ex) {
+            Logger.getLogger(LOGIN.class.getName()).log(Level.SEVERE, null, ex);
         }
-        }else{
-            System.out.println("The connection is not available.");
-        }
+    } else {
+        System.out.println("The connection is not available.");
     }
+}
+
+    
+    private void updateUserProfile(String rusername, String first_name, String last_name, String number, String location) {
+    Connection dbconn = DBConnection.connectDB();
+    if (dbconn != null) {
+        try {
+            String query = "UPDATE users SET first_name = ?, last_name = ?, number = ?, location = ? WHERE username = ?";
+            PreparedStatement st = dbconn.prepareStatement(query);
+
+            st.setString(1, first_name);
+            st.setString(2, last_name);
+            st.setString(3, number);
+            st.setString(4, location);
+            st.setString(5, rusername);
+
+            int rowsAffected = st.executeUpdate();
+
+            if (rowsAffected > 0) {
+                JOptionPane.showMessageDialog(this, "User Profile Updated", "Success", JOptionPane.INFORMATION_MESSAGE);
+            } else {
+                JOptionPane.showMessageDialog(this, "Failed to update profile.", "Error", JOptionPane.ERROR_MESSAGE);
+            }
+
+            st.close();
+            dbconn.close();
+        } catch (SQLException ex) {
+            Logger.getLogger(REGISTER.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    } else {
+        System.out.println("The connection is not available.");
+    }
+}
+
 }
 

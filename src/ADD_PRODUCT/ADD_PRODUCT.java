@@ -3,19 +3,80 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package ADD_PRODUCT;
+import LOGINandSIGNUP.DBConnection;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import javax.swing.JOptionPane;
+import java.awt.Image;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.ImageIcon;
+import javax.swing.JFileChooser;
+import javax.swing.filechooser.FileNameExtensionFilter;
+import java.sql.DriverManager;
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.ByteArrayInputStream;
+import java.io.FileInputStream;
+import LOGINandSIGNUP.LOGIN;
+import LOGINandSIGNUP.REGISTER;
+import HOME.HOME;
+
+
+
+
+
+
+
+
 
 /**
  *
  * @author JOEY SALOZA
  */
 public class ADD_PRODUCT extends javax.swing.JFrame {
-
+    File f = null;
+    String path = null;
+    private ImageIcon format = null;
+    String fname = null;
+    int s = 0;
+    byte[] pimage = null;
     /**
      * Creates new form ADD_PRODUCT
      */
+    
+ResultSet res;
     public ADD_PRODUCT() {
         initComponents();
     }
+public void LoadImage() {
+    try {
+        if (res.next()) {
+            byte[] imagedata = res.getBytes("imagefile");
+            if (imagedata != null) {
+                InputStream in = new ByteArrayInputStream(imagedata);
+                BufferedImage img = ImageIO.read(in);
+                Image image = img.getScaledInstance(200, 200, img.SCALE_SMOOTH);
+                ImageIcon icon = new ImageIcon(image);
+                labelDisplayImage.setIcon(icon);
+            } else {
+                System.out.println("No image data found");
+            }
+        } else {
+            System.out.println("No data found in the result set.");
+        }
+    } catch (SQLException ex) {
+        Logger.getLogger(ADD_PRODUCT.class.getName()).log(Level.SEVERE, null, ex);
+    } catch (Exception ex) {
+        Logger.getLogger(ADD_PRODUCT.class.getName()).log(Level.SEVERE, null, ex);
+    }
+}
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -26,21 +87,198 @@ public class ADD_PRODUCT extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        jLabel9 = new javax.swing.JLabel();
+        jAddProduct = new javax.swing.JLabel();
+        jProductname = new javax.swing.JTextField();
+        jProductDescription = new javax.swing.JTextField();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jCategory = new javax.swing.JComboBox<>();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        labelImage = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jBrowse = new javax.swing.JButton();
+        labelDisplayImage = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel9.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel9.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 18)); // NOI18N
+        jLabel9.setText("Category");
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 480, -1, 20));
+
+        jAddProduct.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ADD_PRODUCT/icon/ADD PRODUCT BUTTON.png"))); // NOI18N
+        jAddProduct.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jAddProductMouseClicked(evt);
+            }
+        });
+        jPanel1.add(jAddProduct, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 620, -1, -1));
+
+        jProductname.setBackground(new java.awt.Color(210, 217, 209));
+        jProductname.setFont(new java.awt.Font("Microsoft Sans Serif", 0, 14)); // NOI18N
+        jProductname.setBorder(null);
+        jProductname.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jProductnameActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jProductname, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 400, 250, 30));
+
+        jProductDescription.setBackground(new java.awt.Color(210, 217, 209));
+        jProductDescription.setFont(new java.awt.Font("Microsoft Sans Serif", 0, 12)); // NOI18N
+        jProductDescription.setBorder(null);
+        jProductDescription.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jProductDescriptionActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jProductDescription, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 555, 200, 30));
+
+        jLabel10.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 18)); // NOI18N
+        jLabel10.setText("Description");
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 560, -1, 20));
+
+        jLabel11.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 18)); // NOI18N
+        jLabel11.setText("Name");
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 400, -1, 20));
+
+        jCategory.setBackground(new java.awt.Color(217, 217, 217));
+        jCategory.setEditable(true);
+        jCategory.setFont(new java.awt.Font("Microsoft Sans Serif", 0, 14)); // NOI18N
+        jCategory.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Null", "Clothes", "FoodWaste", "Food", "Appliances", "Toys", "Furnitures", "Bottles", " " }));
+        jCategory.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCategoryActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jCategory, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 480, 190, 30));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ADD_PRODUCT/icon/DESIGN 1.png"))); // NOI18N
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 620, -1, -1));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ADD_PRODUCT/icon/BACK BUTTON.png"))); // NOI18N
+        jLabel3.setToolTipText("");
+        jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel3MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ADD_PRODUCT/icon/DESIGN 2.png"))); // NOI18N
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        labelImage.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ADD_PRODUCT/icon/Group 1586.png"))); // NOI18N
+        jPanel1.add(labelImage, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, -1, -1));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ADD_PRODUCT/icon/Rectangle 63 (1).png"))); // NOI18N
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 550, -1, -1));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ADD_PRODUCT/icon/Rectangle 63 (1).png"))); // NOI18N
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 390, -1, -1));
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ADD_PRODUCT/icon/Rectangle 63 (1).png"))); // NOI18N
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 470, -1, -1));
+
+        jBrowse.setBackground(new java.awt.Color(55, 185, 67));
+        jBrowse.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 12)); // NOI18N
+        jBrowse.setForeground(new java.awt.Color(255, 255, 255));
+        jBrowse.setText("Browse");
+        jBrowse.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBrowseActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jBrowse, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 350, -1, -1));
+
+        labelDisplayImage.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
+        jPanel1.add(labelDisplayImage, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 100, 210, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 750, Short.MAX_VALUE)
         );
 
-        pack();
+        setSize(new java.awt.Dimension(406, 758));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jProductnameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jProductnameActionPerformed
+        // TODO add your handling code here:
+
+    }//GEN-LAST:event_jProductnameActionPerformed
+
+    private void jProductDescriptionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jProductDescriptionActionPerformed
+        // TODO add your handling code here:
+
+    }//GEN-LAST:event_jProductDescriptionActionPerformed
+
+    private void jAddProductMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jAddProductMouseClicked
+        // TODO add your handling code here:
+        String productname = jProductname.getText();
+        String product_description = jProductDescription.getText();
+        String product_category = (String) jCategory.getSelectedItem();
+
+        if (productname.isEmpty() || product_description.isEmpty() || product_category.isEmpty() ){
+            JOptionPane.showMessageDialog(this, "Please complete the details", "Error", JOptionPane.ERROR_MESSAGE);
+        } else {
+            try {
+                addProduct(productname, product_description, product_category);
+            } catch (FileNotFoundException ex) {
+                Logger.getLogger(ADD_PRODUCT.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+
+
+    }//GEN-LAST:event_jAddProductMouseClicked
+
+    private void jCategoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCategoryActionPerformed
+        // TODO add your handling code here:
+
+    }//GEN-LAST:event_jCategoryActionPerformed
+
+    private void jBrowseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBrowseActionPerformed
+        // TODO add your handling code here:
+        
+        JFileChooser fileChooser = new JFileChooser();
+        FileNameExtensionFilter fnwf = new FileNameExtensionFilter("PNG JPG AND JPEG", "png", "jpeg", "jpg");
+        fileChooser.addChoosableFileFilter(fnwf);
+        int load = fileChooser.showOpenDialog(null);
+                
+        if (load == JFileChooser.APPROVE_OPTION){
+        f = fileChooser.getSelectedFile(); // Update class-level variable
+        
+        path = f.getAbsolutePath(); // Update class-level variable
+        
+        ImageIcon ii = new ImageIcon(path);
+        Image img = ii.getImage().getScaledInstance(200, 200, Image.SCALE_SMOOTH);
+        labelImage.setIcon(new ImageIcon(img));
+    }
+    }//GEN-LAST:event_jBrowseActionPerformed
+
+    private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
+        // TODO add your handling code here:
+        HOME homeFrame = new HOME();
+        homeFrame.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jLabel3MouseClicked
 
     /**
      * @param args the command line arguments
@@ -78,5 +316,67 @@ public class ADD_PRODUCT extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jAddProduct;
+    private javax.swing.JButton jBrowse;
+    private javax.swing.JComboBox<String> jCategory;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JTextField jProductDescription;
+    private javax.swing.JTextField jProductname;
+    private javax.swing.JLabel labelDisplayImage;
+    private javax.swing.JLabel labelImage;
     // End of variables declaration//GEN-END:variables
+
+    private void addProduct(String productname, String product_description, String product_category) throws FileNotFoundException {
+        Connection conn = null;
+        PreparedStatement stmt = null;        
+        
+        try {
+            conn = DBConnection.getConnection();
+            File file = new File(path);
+            InputStream is = new FileInputStream(file);
+
+            stmt = conn.prepareStatement("INSERT INTO product (productname, product_description, product_category, imagepath, product_picture, imagename) VALUES (?, ?, ?, ?, ?, ?)");
+            stmt.setString(1, productname);
+            stmt.setString(2, product_description);
+            stmt.setString(3, product_category);
+            stmt.setString(4, path);
+            stmt.setBinaryStream(5, is);
+            stmt.setString(6, file.getName());
+
+            int rowsAffected = stmt.executeUpdate();
+
+            if (rowsAffected > 0) {
+                HOME homeFrame = new HOME();
+                homeFrame.setVisible(true);
+                this.dispose();
+                JOptionPane.showMessageDialog(this, "Product Data Inserted", "Success", JOptionPane.INFORMATION_MESSAGE);
+            } else {
+                JOptionPane.showMessageDialog(this, "Please try again.", "Error", JOptionPane.ERROR_MESSAGE);
+            }
+        } catch (SQLException ex) {
+            System.out.println("Error inserting product: " + ex.getMessage());
+        } finally {
+            // Close resources in finally block
+            try {
+                if (stmt != null) {
+                    stmt.close();
+                }
+                if (conn != null) {
+                    conn.close();
+                }
+            } catch (SQLException ex) {
+                System.out.println("Error closing resources: " + ex.getMessage());
+            }
+        }
+
+    }
 }

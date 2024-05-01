@@ -8,6 +8,10 @@ import java.awt.print.PrinterException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import LOGINandSIGNUP.DBConnection;
 
 
 /**
@@ -51,7 +55,19 @@ public class TOTAL extends javax.swing.JFrame {
         
         totalAmount += price;
         
-        
+        try (Connection connection = DBConnection.getConnection()) {
+            String query = "INSERT INTO transactions (time, date, item_number, item_name, price, total_amount) VALUES (?, ?, ?, ?, ?, ?)";
+            PreparedStatement preparedStatement = connection.prepareStatement(query);
+            preparedStatement.setString(1, this.time);
+            preparedStatement.setString(2, this.date);
+            preparedStatement.setInt(3, itemNumber);
+            preparedStatement.setString(4, itemName);
+            preparedStatement.setDouble(5, price);
+            preparedStatement.setDouble(6, totalAmount);
+            preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace(); // Log or handle the error appropriately
+        }
 
     }
     
@@ -176,8 +192,17 @@ public class TOTAL extends javax.swing.JFrame {
             try {
             // TODO add your handling code here:
             jTextArea.print();
+            JOptionPane.showMessageDialog(null, "Print successful!");
+            HOME h = new HOME ();
+            h.setVisible (true) ;
+            h.pack();
+            h.setLocationRelativeTo(null);
+            h.setDefaultCloseOperation (HOME.EXIT_ON_CLOSE);
+
         } catch (PrinterException ex) {
             Logger.getLogger(TOTAL.class.getName()).log(Level.SEVERE, null, ex);
+            JOptionPane.showMessageDialog(null, "Error printing: " + ex.getMessage());
+
         }
         }else{
             JOptionPane.showMessageDialog(null,"You haven't purchased any product");

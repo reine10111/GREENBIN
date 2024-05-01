@@ -40,6 +40,7 @@ public class HOME extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jAdd = new javax.swing.JLabel();
         jAbout = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
         jFront = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -92,15 +93,23 @@ public class HOME extends javax.swing.JFrame {
 
         jAbout.setBackground(new java.awt.Color(255, 102, 204));
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/CIRCLE.png"))); // NOI18N
+
         javax.swing.GroupLayout jAboutLayout = new javax.swing.GroupLayout(jAbout);
         jAbout.setLayout(jAboutLayout);
         jAboutLayout.setHorizontalGroup(
             jAboutLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 390, Short.MAX_VALUE)
+            .addGroup(jAboutLayout.createSequentialGroup()
+                .addGap(144, 144, 144)
+                .addComponent(jLabel1)
+                .addContainerGap(177, Short.MAX_VALUE))
         );
         jAboutLayout.setVerticalGroup(
             jAboutLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 740, Short.MAX_VALUE)
+            .addGroup(jAboutLayout.createSequentialGroup()
+                .addGap(116, 116, 116)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(535, Short.MAX_VALUE))
         );
 
         jPanel2.add(jAbout, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 390, 740));
@@ -226,6 +235,7 @@ public class HOME extends javax.swing.JFrame {
     private javax.swing.JLabel jAdd;
     private javax.swing.JPanel jFront;
     private javax.swing.JLabel jHome;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jMessage;
     private javax.swing.JPanel jPanel2;

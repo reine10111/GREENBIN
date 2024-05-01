@@ -4,19 +4,75 @@
  */
 package HOME;
 
+import java.awt.print.PrinterException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JOptionPane;
+
+
 /**
  *
  * @author JOEY SALOZA
  */
 public class TOTAL extends javax.swing.JFrame {
-
+    private String time;
+    private String date;
+    private double totalAmount; 
     /**
      * Creates new form TOTAL
      */
     public TOTAL() {
         initComponents();
+        totalAmount = 0.0; 
+        
+       
+    }
+    
+    public void greenbin(String time, String date, int itemNumber, String itemName, double price) {
+        this.time = time;
+        this.date = date;
+
+        // If jTextArea is empty, initialize with the header, otherwise append the new item
+        if (jTextArea.getText().isEmpty()) {
+            jTextArea.setText("*********************GREENBIN*********************\n"
+                    + "Time: " + this.time + " Date: " + this.date + "\n"
+                    + "******************************************************\n"
+                    + "Item Name: \t\t" + "Price(P)\n"
+
+
+
+            );
+                    
+        }
+
+        // Append new item information
+        String newText = "\n" + itemNumber + ". " + itemName + "\t\t" + price + "\n";
+        jTextArea.append(newText);
+        
+        totalAmount += price;
+        
+        
+
+    }
+    
+    public void displayTotal() {
+        // Add the total amount to the receipt
+        jTextArea.append("\n******************************************************\n");
+        jTextArea.append("Total: \t\t" + totalAmount + "\n");
+        jTextArea.append("******************************************************\n");
+        jTextArea.append("THIS SLIP IS YOUR TRANSACTION RECORD\n");
+        
+        jTextArea.append("******************************************************\n");
+
+
+
     }
 
+    public void reset() {
+        jTextArea.setText("");
+        totalAmount = 0.0; // Reset the total amount
+    }
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -31,7 +87,7 @@ public class TOTAL extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        jTextArea = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -44,6 +100,11 @@ public class TOTAL extends javax.swing.JFrame {
         jButton1.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Print");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setBackground(new java.awt.Color(255, 102, 102));
         jButton2.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
@@ -55,9 +116,9 @@ public class TOTAL extends javax.swing.JFrame {
             }
         });
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
+        jTextArea.setColumns(20);
+        jTextArea.setRows(5);
+        jScrollPane1.setViewportView(jTextArea);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -107,7 +168,23 @@ public class TOTAL extends javax.swing.JFrame {
         h.pack();
         h.setLocationRelativeTo(null);
         h.setDefaultCloseOperation (HOME.EXIT_ON_CLOSE);
+        this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        if(totalAmount!=0){
+            try {
+            // TODO add your handling code here:
+            jTextArea.print();
+        } catch (PrinterException ex) {
+            Logger.getLogger(TOTAL.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        }else{
+            JOptionPane.showMessageDialog(null,"You haven't purchased any product");
+
+        }
+        
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -150,6 +227,6 @@ public class TOTAL extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea jTextArea;
     // End of variables declaration//GEN-END:variables
 }

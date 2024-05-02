@@ -8,6 +8,7 @@ import java.lang.System.Logger.Level;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import javax.swing.JOptionPane;
+import START.START;
 
 /**
  *
@@ -1392,6 +1393,8 @@ public class HOME extends javax.swing.JFrame {
         jOfficials.add(jLabel147, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 550, 100, 10));
 
         jButton2.setBackground(new java.awt.Color(55, 185, 67));
+        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("LOG OUT");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1586,7 +1589,15 @@ public class HOME extends javax.swing.JFrame {
     }//GEN-LAST:event_btnResetActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        
+    int choice = JOptionPane.showConfirmDialog(this, "Do you want to logout?", "Logout", JOptionPane.YES_NO_OPTION);
+
+    if(choice == JOptionPane.YES_OPTION){
+        START startPage = new START();
+        startPage.setVisible(true);
+        this.dispose();
+}
+
+
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jMessageMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMessageMouseClicked

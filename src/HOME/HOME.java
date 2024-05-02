@@ -90,6 +90,11 @@ public class HOME extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel79 = new javax.swing.JLabel();
+        jLabel86 = new javax.swing.JLabel();
+        jLabel92 = new javax.swing.JLabel();
+        jLabel95 = new javax.swing.JLabel();
+        jLabel100 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jHome = new javax.swing.JLabel();
         jProfile = new javax.swing.JLabel();
@@ -97,6 +102,16 @@ public class HOME extends javax.swing.JFrame {
         jMessage = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jAbout = new javax.swing.JPanel();
+        jLabel84 = new javax.swing.JLabel();
+        jLabel85 = new javax.swing.JLabel();
+        jLabel81 = new javax.swing.JLabel();
+        jLabel87 = new javax.swing.JLabel();
+        jLabel94 = new javax.swing.JLabel();
+        jLabel83 = new javax.swing.JLabel();
+        jLabel88 = new javax.swing.JLabel();
+        jLabel89 = new javax.swing.JLabel();
+        jLabel90 = new javax.swing.JLabel();
+        jLabel93 = new javax.swing.JLabel();
         jFront = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jPanel1 = new javax.swing.JPanel();
@@ -198,7 +213,61 @@ public class HOME extends javax.swing.JFrame {
         jTxtime = new javax.swing.JLabel();
         jDate = new javax.swing.JLabel();
         jCampaign = new javax.swing.JPanel();
+        jLabel67 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel65 = new javax.swing.JLabel();
+        jLabel66 = new javax.swing.JLabel();
+        jLabel68 = new javax.swing.JLabel();
+        jLabel69 = new javax.swing.JLabel();
+        jLabel72 = new javax.swing.JLabel();
         jOfficials = new javax.swing.JPanel();
+        jLabel82 = new javax.swing.JLabel();
+        jLabel70 = new javax.swing.JLabel();
+        BARANGAY = new javax.swing.JLabel();
+        jLabel73 = new javax.swing.JLabel();
+        jLabel74 = new javax.swing.JLabel();
+        jLabel71 = new javax.swing.JLabel();
+        jLabel75 = new javax.swing.JLabel();
+        jLabel76 = new javax.swing.JLabel();
+        jLabel77 = new javax.swing.JLabel();
+        jLabel78 = new javax.swing.JLabel();
+        jLabel80 = new javax.swing.JLabel();
+        jLabel91 = new javax.swing.JLabel();
+        jLabel112 = new javax.swing.JLabel();
+        jLabel113 = new javax.swing.JLabel();
+        jLabel114 = new javax.swing.JLabel();
+        jLabel117 = new javax.swing.JLabel();
+        jLabel119 = new javax.swing.JLabel();
+        jLabel120 = new javax.swing.JLabel();
+        jLabel121 = new javax.swing.JLabel();
+        jLabel122 = new javax.swing.JLabel();
+        jLabel123 = new javax.swing.JLabel();
+        jLabel124 = new javax.swing.JLabel();
+        jLabel125 = new javax.swing.JLabel();
+        jLabel126 = new javax.swing.JLabel();
+        jLabel127 = new javax.swing.JLabel();
+        jLabel131 = new javax.swing.JLabel();
+        jLabel136 = new javax.swing.JLabel();
+        jLabel139 = new javax.swing.JLabel();
+        jLabel140 = new javax.swing.JLabel();
+        jLabel141 = new javax.swing.JLabel();
+        jLabel142 = new javax.swing.JLabel();
+        jLabel143 = new javax.swing.JLabel();
+        jLabel144 = new javax.swing.JLabel();
+        jLabel145 = new javax.swing.JLabel();
+        jLabel146 = new javax.swing.JLabel();
+        jLabel147 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
+
+        jLabel79.setText("jLabel79");
+
+        jLabel86.setText("jLabel86");
+
+        jLabel92.setText("jLabel92");
+
+        jLabel95.setText("jLabel95");
+
+        jLabel100.setText("jLabel100");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -239,20 +308,46 @@ public class HOME extends javax.swing.JFrame {
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/HOME/Rectangle 10.png"))); // NOI18N
         jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 684, -1, 90));
 
-        jAbout.setBackground(new java.awt.Color(255, 102, 204));
+        jAbout.setBackground(new java.awt.Color(255, 255, 255));
+        jAbout.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        javax.swing.GroupLayout jAboutLayout = new javax.swing.GroupLayout(jAbout);
-        jAbout.setLayout(jAboutLayout);
-        jAboutLayout.setHorizontalGroup(
-            jAboutLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 390, Short.MAX_VALUE)
-        );
-        jAboutLayout.setVerticalGroup(
-            jAboutLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 740, Short.MAX_VALUE)
-        );
+        jLabel84.setFont(new java.awt.Font("Artifakt Element Black", 1, 24)); // NOI18N
+        jLabel84.setText("About Us");
+        jAbout.add(jLabel84, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 10, -1, -1));
 
-        jPanel2.add(jAbout, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 390, 740));
+        jLabel85.setFont(new java.awt.Font("Artifakt Element", 0, 18)); // NOI18N
+        jLabel85.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/At GreenBin, we're on a mission to revolutionize waste management practices by creating a platform that not only addresses the pressing issue of waste disposal but also empowers communities and individual.png"))); // NOI18N
+        jAbout.add(jLabel85, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 371, -1));
+
+        jLabel81.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/shapes.png"))); // NOI18N
+        jAbout.add(jLabel81, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 190, -1));
+
+        jLabel87.setFont(new java.awt.Font("Artifakt Element Black", 1, 24)); // NOI18N
+        jLabel87.setText("Our Mission");
+        jAbout.add(jLabel87, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 140, 156, -1));
+
+        jLabel94.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/Whether you're a concerned citizen, a barangay official, or a business owner, there are countless ways to get involved with GreenBin. From using our app to dispose of your waste responsibly to partnering .png"))); // NOI18N
+        jAbout.add(jLabel94, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 470, -1, -1));
+
+        jLabel83.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/shapes (1).png"))); // NOI18N
+        jAbout.add(jLabel83, new org.netbeans.lib.awtextra.AbsoluteConstraints(196, 611, -1, -1));
+
+        jLabel88.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/At GreenBin, we're using technology to transform waste management, empowering users to handle various household waste types seamlessly. From organics to recyclables and hazardous materials, our platfo (2).png"))); // NOI18N
+        jAbout.add(jLabel88, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, -1, -1));
+
+        jLabel89.setFont(new java.awt.Font("Artifakt Element Black", 1, 24)); // NOI18N
+        jLabel89.setText("Our Vision");
+        jAbout.add(jLabel89, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 290, 140, -1));
+
+        jLabel90.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/Our vision at GreenBin is a world where waste is seen not as a problem, but as a valuable resource. We believe that by reimagining the way we handle waste, we can create a more sustainable future for our .png"))); // NOI18N
+        jLabel90.setText("jLabel90");
+        jAbout.add(jLabel90, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 330, 356, -1));
+
+        jLabel93.setFont(new java.awt.Font("Artifakt Element Black", 1, 24)); // NOI18N
+        jLabel93.setText("Join Us");
+        jAbout.add(jLabel93, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 430, -1, -1));
+
+        jPanel2.add(jAbout, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 390, 750));
 
         jFront.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -1130,33 +1225,180 @@ public class HOME extends javax.swing.JFrame {
 
         jPanel2.add(jFront, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        jCampaign.setBackground(new java.awt.Color(0, 255, 0));
+        jCampaign.setBackground(new java.awt.Color(255, 255, 255));
+        jCampaign.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        javax.swing.GroupLayout jCampaignLayout = new javax.swing.GroupLayout(jCampaign);
-        jCampaign.setLayout(jCampaignLayout);
-        jCampaignLayout.setHorizontalGroup(
-            jCampaignLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 390, Short.MAX_VALUE)
-        );
-        jCampaignLayout.setVerticalGroup(
-            jCampaignLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 749, Short.MAX_VALUE)
-        );
+        jLabel67.setFont(new java.awt.Font("Tw Cen MT Condensed", 1, 26)); // NOI18N
+        jLabel67.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel67.setText("TURN OUR TRASH INTO TREASURE");
+        jCampaign.add(jLabel67, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, -1, 20));
 
-        jPanel2.add(jCampaign, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/shapes.png"))); // NOI18N
+        jCampaign.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -50, 250, 200));
 
-        jOfficials.setBackground(new java.awt.Color(51, 51, 255));
+        jLabel65.setFont(new java.awt.Font("Tw Cen MT Condensed", 1, 36)); // NOI18N
+        jLabel65.setText("CAMPAIGNS");
+        jCampaign.add(jLabel65, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 30, -1, -1));
 
-        javax.swing.GroupLayout jOfficialsLayout = new javax.swing.GroupLayout(jOfficials);
-        jOfficials.setLayout(jOfficialsLayout);
-        jOfficialsLayout.setHorizontalGroup(
-            jOfficialsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 390, Short.MAX_VALUE)
-        );
-        jOfficialsLayout.setVerticalGroup(
-            jOfficialsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 751, Short.MAX_VALUE)
-        );
+        jLabel66.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/SEARCH.png"))); // NOI18N
+        jCampaign.add(jLabel66, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, -1, 40));
+
+        jLabel68.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/Reduce-waste-in-your-home 1 (1).png"))); // NOI18N
+        jLabel68.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(55, 185, 67), 2, true));
+        jCampaign.add(jLabel68, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 340, 220));
+
+        jLabel69.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
+        jLabel69.setText("BY REDUCING OUR WASTE, WE ALSO REDUCE POLLUTION.");
+        jCampaign.add(jLabel69, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 410, -1, -1));
+
+        jLabel72.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/recycle02text_fix_rgb2-removebg-preview (2) 1.png"))); // NOI18N
+        jCampaign.add(jLabel72, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 450, -1, -1));
+
+        jPanel2.add(jCampaign, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 390, 750));
+
+        jOfficials.setBackground(new java.awt.Color(255, 255, 255));
+        jOfficials.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel82.setIcon(new javax.swing.ImageIcon(getClass().getResource("/OFFICIALS/ICON/MESSAGE.png"))); // NOI18N
+        jOfficials.add(jLabel82, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 550, -1, -1));
+
+        jLabel70.setIcon(new javax.swing.ImageIcon(getClass().getResource("/OFFICIALS/ICON/DESIGN 1.png"))); // NOI18N
+        jOfficials.add(jLabel70, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 620, 160, -1));
+
+        BARANGAY.setFont(new java.awt.Font("Artifakt Element Black", 1, 27)); // NOI18N
+        BARANGAY.setText("BARANGAY 04");
+        jOfficials.add(BARANGAY, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 100, -1, 30));
+
+        jLabel73.setFont(new java.awt.Font("Artifakt Element Black", 1, 44)); // NOI18N
+        jLabel73.setText("GreenBin");
+        jOfficials.add(jLabel73, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 30, 227, -1));
+
+        jLabel74.setIcon(new javax.swing.ImageIcon(getClass().getResource("/OFFICIALS/ICON/JOEY.png"))); // NOI18N
+        jLabel74.setText("jLabel74");
+        jOfficials.add(jLabel74, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 140, 118, -1));
+
+        jLabel71.setIcon(new javax.swing.ImageIcon(getClass().getResource("/OFFICIALS/ICON/DESIGN 2.png"))); // NOI18N
+        jOfficials.add(jLabel71, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 189, 120));
+
+        jLabel75.setIcon(new javax.swing.ImageIcon(getClass().getResource("/OFFICIALS/ICON/CAREN.png"))); // NOI18N
+        jOfficials.add(jLabel75, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 140, -1, -1));
+
+        jLabel76.setFont(new java.awt.Font("Artifakt Element", 1, 13)); // NOI18N
+        jLabel76.setText("Hon. Joey Saloza");
+        jOfficials.add(jLabel76, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 260, -1, -1));
+
+        jLabel77.setFont(new java.awt.Font("Artifakt Element", 1, 13)); // NOI18N
+        jLabel77.setText("Hon. Caren Suarez");
+        jOfficials.add(jLabel77, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 260, -1, -1));
+
+        jLabel78.setFont(new java.awt.Font("Artifakt Element Black", 1, 14)); // NOI18N
+        jLabel78.setText("BRGY. CAPTAIN");
+        jOfficials.add(jLabel78, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 280, -1, -1));
+
+        jLabel80.setFont(new java.awt.Font("Artifakt Element Black", 1, 14)); // NOI18N
+        jLabel80.setText(" BRGY. SK CHAIRMAN");
+        jOfficials.add(jLabel80, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 270, -1, 40));
+        jOfficials.add(jLabel91, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 410, -1, -1));
+
+        jLabel112.setIcon(new javax.swing.ImageIcon(getClass().getResource("/OFFICIALS/ICON/GERA.png"))); // NOI18N
+        jOfficials.add(jLabel112, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, -1, -1));
+
+        jLabel113.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/ELLAYZA.png"))); // NOI18N
+        jOfficials.add(jLabel113, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 320, -1, -1));
+
+        jLabel114.setIcon(new javax.swing.ImageIcon(getClass().getResource("/OFFICIALS/ICON/CAREN2.png"))); // NOI18N
+        jOfficials.add(jLabel114, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 320, -1, -1));
+
+        jLabel117.setIcon(new javax.swing.ImageIcon(getClass().getResource("/OFFICIALS/ICON/TRISHA.png"))); // NOI18N
+        jOfficials.add(jLabel117, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 450, -1, -1));
+
+        jLabel119.setFont(new java.awt.Font("Artifakt Element Black", 1, 9)); // NOI18N
+        jLabel119.setText("BRGY. COUNSILOR");
+        jOfficials.add(jLabel119, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 420, -1, 10));
+
+        jLabel120.setFont(new java.awt.Font("Artifakt Element", 1, 9)); // NOI18N
+        jLabel120.setText("Hon. Era Cabangahan");
+        jOfficials.add(jLabel120, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 400, -1, 20));
+
+        jLabel121.setFont(new java.awt.Font("Artifakt Element Black", 1, 9)); // NOI18N
+        jLabel121.setText("BRGY. COUNSILOR");
+        jOfficials.add(jLabel121, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 420, 90, 10));
+
+        jLabel122.setFont(new java.awt.Font("Artifakt Element Black", 1, 9)); // NOI18N
+        jLabel122.setText("  BRGY. COUNSILOR");
+        jLabel122.setToolTipText("");
+        jOfficials.add(jLabel122, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 420, -1, 10));
+
+        jLabel123.setIcon(new javax.swing.ImageIcon(getClass().getResource("/OFFICIALS/ICON/TRISHA.png"))); // NOI18N
+        jOfficials.add(jLabel123, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 320, -1, -1));
+
+        jLabel124.setFont(new java.awt.Font("Artifakt Element Black", 1, 9)); // NOI18N
+        jLabel124.setText("BRGY. COUNSILOR");
+        jOfficials.add(jLabel124, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 420, 100, 10));
+
+        jLabel125.setFont(new java.awt.Font("Artifakt Element", 1, 9)); // NOI18N
+        jLabel125.setText("Hon. Trisha Cebusana");
+        jOfficials.add(jLabel125, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 400, 100, 20));
+
+        jLabel126.setFont(new java.awt.Font("Artifakt Element", 1, 9)); // NOI18N
+        jLabel126.setText("Hon. Caren Suarez");
+        jLabel126.setToolTipText("");
+        jOfficials.add(jLabel126, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 400, -1, 20));
+
+        jLabel127.setFont(new java.awt.Font("Artifakt Element", 1, 9)); // NOI18N
+        jLabel127.setText(" Hon. Ellayza Wagan");
+        jOfficials.add(jLabel127, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 400, 90, 20));
+
+        jLabel131.setFont(new java.awt.Font("Artifakt Element", 1, 9)); // NOI18N
+        jLabel131.setText("    Hon. Trisha Cebusana");
+        jOfficials.add(jLabel131, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 530, 110, 20));
+
+        jLabel136.setFont(new java.awt.Font("Artifakt Element Black", 1, 9)); // NOI18N
+        jLabel136.setText("BRGY. COUNSILOR");
+        jOfficials.add(jLabel136, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 550, 100, 10));
+
+        jLabel139.setIcon(new javax.swing.ImageIcon(getClass().getResource("/OFFICIALS/ICON/GERA.png"))); // NOI18N
+        jOfficials.add(jLabel139, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 450, -1, -1));
+
+        jLabel140.setFont(new java.awt.Font("Artifakt Element", 1, 9)); // NOI18N
+        jLabel140.setText("Hon. Era Cabangahan");
+        jOfficials.add(jLabel140, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 530, -1, 20));
+
+        jLabel141.setFont(new java.awt.Font("Artifakt Element Black", 1, 9)); // NOI18N
+        jLabel141.setText("  BRGY. COUNSILOR");
+        jOfficials.add(jLabel141, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 550, 90, 10));
+
+        jLabel142.setIcon(new javax.swing.ImageIcon(getClass().getResource("/OFFICIALS/ICON/ELLAYZA.png"))); // NOI18N
+        jOfficials.add(jLabel142, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 450, -1, -1));
+
+        jLabel143.setFont(new java.awt.Font("Artifakt Element Black", 1, 9)); // NOI18N
+        jLabel143.setText("  BRGY. COUNSILOR");
+        jOfficials.add(jLabel143, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 550, -1, 10));
+
+        jLabel144.setFont(new java.awt.Font("Artifakt Element", 1, 9)); // NOI18N
+        jLabel144.setText("  Hon. Ellayza Wagan");
+        jLabel144.setToolTipText("");
+        jOfficials.add(jLabel144, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 530, 90, 20));
+
+        jLabel145.setIcon(new javax.swing.ImageIcon(getClass().getResource("/OFFICIALS/ICON/JOEY2.png"))); // NOI18N
+        jOfficials.add(jLabel145, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 450, -1, -1));
+
+        jLabel146.setFont(new java.awt.Font("Artifakt Element", 1, 9)); // NOI18N
+        jLabel146.setText("   Hon. Joey Saloza");
+        jOfficials.add(jLabel146, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 530, -1, 20));
+
+        jLabel147.setFont(new java.awt.Font("Artifakt Element Black", 1, 9)); // NOI18N
+        jLabel147.setText(" BRGY. COUNSILOR");
+        jOfficials.add(jLabel147, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 550, 100, 10));
+
+        jButton2.setBackground(new java.awt.Color(55, 185, 67));
+        jButton2.setText("LOG OUT");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        jOfficials.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 10, -1, -1));
 
         jPanel2.add(jOfficials, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
@@ -1176,7 +1418,7 @@ public class HOME extends javax.swing.JFrame {
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        setSize(new java.awt.Dimension(406, 758));
+        setSize(new java.awt.Dimension(404, 747));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -1190,37 +1432,6 @@ public class HOME extends javax.swing.JFrame {
         homeFrame.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jHomeMouseClicked
-
-    private void jMessageMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMessageMouseClicked
-        // TODO add your handling code here:
-        jFront.setVisible(false);
-        jAbout.setVisible(false);
-        jCampaign.setVisible(true);
-        jOfficials.setVisible(false);
-
-        
-    }//GEN-LAST:event_jMessageMouseClicked
-
-    private void jProfileMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jProfileMouseClicked
-        // TODO add your handling code here:
-        jFront.setVisible(false);
-        jAbout.setVisible(false);
-        jCampaign.setVisible(false);
-        jOfficials.setVisible(true);
-
-        
-        
-    }//GEN-LAST:event_jProfileMouseClicked
-
-    private void jAboutUsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jAboutUsMouseClicked
-        // TODO add your handling code here:
-        jFront.setVisible(false);
-        jAbout.setVisible(true);
-        jOfficials.setVisible(false);
-        jCampaign.setVisible(false);
-
-
-    }//GEN-LAST:event_jAboutUsMouseClicked
     public void setTime() {
         new Thread(new Runnable() {
             @Override
@@ -1374,6 +1585,37 @@ public class HOME extends javax.swing.JFrame {
         reset();
     }//GEN-LAST:event_btnResetActionPerformed
 
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jMessageMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMessageMouseClicked
+        // TODO add your handling code here:
+        jFront.setVisible(false);
+        jAbout.setVisible(false);
+        jCampaign.setVisible(true);
+        jOfficials.setVisible(false);
+
+    }//GEN-LAST:event_jMessageMouseClicked
+
+    private void jAboutUsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jAboutUsMouseClicked
+        // TODO add your handling code here:
+        jFront.setVisible(false);
+        jAbout.setVisible(true);
+        jOfficials.setVisible(false);
+        jCampaign.setVisible(false);
+
+    }//GEN-LAST:event_jAboutUsMouseClicked
+
+    private void jProfileMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jProfileMouseClicked
+        // TODO add your handling code here:
+        jFront.setVisible(false);
+        jAbout.setVisible(false);
+        jCampaign.setVisible(false);
+        jOfficials.setVisible(true);
+
+    }//GEN-LAST:event_jProfileMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -1411,11 +1653,13 @@ public class HOME extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel BARANGAY;
     private javax.swing.JButton btnReset;
     private javax.swing.JPanel jAbout;
     private javax.swing.JLabel jAboutUs;
     private javax.swing.JPanel jAppliances;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JPanel jCPapers;
     private javax.swing.JPanel jCampaign;
     private javax.swing.JPanel jCans;
@@ -1438,9 +1682,35 @@ public class HOME extends javax.swing.JFrame {
     private javax.swing.JLabel jHome;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel100;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel112;
+    private javax.swing.JLabel jLabel113;
+    private javax.swing.JLabel jLabel114;
+    private javax.swing.JLabel jLabel117;
+    private javax.swing.JLabel jLabel119;
     private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel120;
+    private javax.swing.JLabel jLabel121;
+    private javax.swing.JLabel jLabel122;
+    private javax.swing.JLabel jLabel123;
+    private javax.swing.JLabel jLabel124;
+    private javax.swing.JLabel jLabel125;
+    private javax.swing.JLabel jLabel126;
+    private javax.swing.JLabel jLabel127;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel131;
+    private javax.swing.JLabel jLabel136;
+    private javax.swing.JLabel jLabel139;
     private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel140;
+    private javax.swing.JLabel jLabel141;
+    private javax.swing.JLabel jLabel142;
+    private javax.swing.JLabel jLabel143;
+    private javax.swing.JLabel jLabel144;
+    private javax.swing.JLabel jLabel145;
+    private javax.swing.JLabel jLabel146;
+    private javax.swing.JLabel jLabel147;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
@@ -1496,9 +1766,40 @@ public class HOME extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel62;
     private javax.swing.JLabel jLabel63;
     private javax.swing.JLabel jLabel64;
+    private javax.swing.JLabel jLabel65;
+    private javax.swing.JLabel jLabel66;
+    private javax.swing.JLabel jLabel67;
+    private javax.swing.JLabel jLabel68;
+    private javax.swing.JLabel jLabel69;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel70;
+    private javax.swing.JLabel jLabel71;
+    private javax.swing.JLabel jLabel72;
+    private javax.swing.JLabel jLabel73;
+    private javax.swing.JLabel jLabel74;
+    private javax.swing.JLabel jLabel75;
+    private javax.swing.JLabel jLabel76;
+    private javax.swing.JLabel jLabel77;
+    private javax.swing.JLabel jLabel78;
+    private javax.swing.JLabel jLabel79;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel80;
+    private javax.swing.JLabel jLabel81;
+    private javax.swing.JLabel jLabel82;
+    private javax.swing.JLabel jLabel83;
+    private javax.swing.JLabel jLabel84;
+    private javax.swing.JLabel jLabel85;
+    private javax.swing.JLabel jLabel86;
+    private javax.swing.JLabel jLabel87;
+    private javax.swing.JLabel jLabel88;
+    private javax.swing.JLabel jLabel89;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabel90;
+    private javax.swing.JLabel jLabel91;
+    private javax.swing.JLabel jLabel92;
+    private javax.swing.JLabel jLabel93;
+    private javax.swing.JLabel jLabel94;
+    private javax.swing.JLabel jLabel95;
     private javax.swing.JLabel jMessage;
     private javax.swing.JPanel jMetals;
     private javax.swing.JPanel jOfficials;

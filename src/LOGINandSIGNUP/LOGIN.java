@@ -23,6 +23,8 @@ public class LOGIN extends javax.swing.JFrame {
      * Creates new form LOGIN
      */
     public LOGIN() {
+        setUndecorated(true);
+
         initComponents();
     }
 
@@ -66,18 +68,18 @@ public class LOGIN extends javax.swing.JFrame {
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/shapes (1).png"))); // NOI18N
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 720, -1, -1));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 640, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Artifakt Element Black", 1, 24)); // NOI18N
         jLabel3.setText("WELCOME TO");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 150, -1, -1));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 120, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Artifakt Element Black", 1, 48)); // NOI18N
         jLabel5.setText("GreenBin");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 180, -1, 52));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 150, -1, 52));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/LoginImg.png"))); // NOI18N
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, -1, 228));
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 210, -1, 228));
 
         LOGINBUTTON.setBackground(new java.awt.Color(55, 185, 67));
         LOGINBUTTON.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
@@ -88,24 +90,24 @@ public class LOGIN extends javax.swing.JFrame {
                 LOGINBUTTONActionPerformed(evt);
             }
         });
-        jPanel1.add(LOGINBUTTON, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 660, 111, 34));
+        jPanel1.add(LOGINBUTTON, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 580, 111, 34));
 
         Username.setBackground(new java.awt.Color(217, 217, 217));
-        Username.setFont(new java.awt.Font("Gigi", 0, 12)); // NOI18N
+        Username.setFont(new java.awt.Font("Microsoft Sans Serif", 0, 12)); // NOI18N
         Username.setBorder(null);
         Username.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 UsernameActionPerformed(evt);
             }
         });
-        jPanel1.add(Username, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 540, 260, 20));
+        jPanel1.add(Username, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 470, 260, 20));
 
         Password.setBackground(new java.awt.Color(215, 215, 215));
         Password.setBorder(null);
-        jPanel1.add(Password, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 610, 260, 20));
+        jPanel1.add(Password, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 540, 260, 20));
 
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/user.png"))); // NOI18N
-        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 540, 20, 20));
+        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 470, 20, 20));
 
         jLabel7.setForeground(new java.awt.Color(0, 0, 255));
         jLabel7.setText("SIGNUP");
@@ -114,29 +116,29 @@ public class LOGIN extends javax.swing.JFrame {
                 jLabel7MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 700, -1, -1));
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 630, -1, -1));
 
         jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/password.png"))); // NOI18N
-        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 610, -1, -1));
+        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 540, -1, -1));
 
         jLabel8.setBackground(new java.awt.Color(217, 217, 217));
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/Rectangle 7.png"))); // NOI18N
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 530, -1, -1));
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 460, -1, -1));
 
         jLabel9.setFont(new java.awt.Font("Arial Narrow", 0, 12)); // NOI18N
         jLabel9.setText("Password");
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 580, 120, 20));
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 510, 120, 20));
 
         jLabel10.setBackground(new java.awt.Color(217, 217, 217));
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/Rectangle 7.png"))); // NOI18N
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 600, -1, -1));
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 530, -1, -1));
 
         jLabel11.setFont(new java.awt.Font("Arial Narrow", 0, 12)); // NOI18N
         jLabel11.setText("Username");
-        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 510, 120, 20));
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 440, 120, 20));
 
         jLabel14.setText("I don't have an account.");
-        jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 700, -1, -1));
+        jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 630, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -149,7 +151,7 @@ public class LOGIN extends javax.swing.JFrame {
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        setSize(new java.awt.Dimension(420, 852));
+        setSize(new java.awt.Dimension(406, 758));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 

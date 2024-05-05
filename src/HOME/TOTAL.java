@@ -56,7 +56,7 @@ public class TOTAL extends javax.swing.JFrame {
         totalAmount += price;
         
         try (Connection connection = DBConnection.getConnection()) {
-            String query = "INSERT INTO transactions (time, date, item_number, item_name, price, total_amount) VALUES (?, ?, ?, ?, ?, ?)";
+            String query = "INSERT INTO transactions (time, date, itemNumber, item_name, price, total_amount) VALUES (?, ?, ?, ?, ?, ?)";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setString(1, this.time);
             preparedStatement.setString(2, this.date);
@@ -198,6 +198,8 @@ public class TOTAL extends javax.swing.JFrame {
             h.pack();
             h.setLocationRelativeTo(null);
             h.setDefaultCloseOperation (HOME.EXIT_ON_CLOSE);
+            this.dispose();
+
 
         } catch (PrinterException ex) {
             Logger.getLogger(TOTAL.class.getName()).log(Level.SEVERE, null, ex);

@@ -1421,7 +1421,7 @@ public class HOME extends javax.swing.JFrame {
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        setSize(new java.awt.Dimension(404, 747));
+        setSize(new java.awt.Dimension(406, 758));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 

@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package LOGINandSIGNUP;
-import LOGINandSIGNUP.LOGIN;
 
 import java.sql.Connection;
 
@@ -22,6 +21,8 @@ public class REGISTER extends javax.swing.JFrame {
      * Creates new form REGISTER
      */
     public REGISTER() {
+        setUndecorated(true);
+
         initComponents();
     }
 
@@ -50,7 +51,6 @@ public class REGISTER extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
@@ -58,8 +58,6 @@ public class REGISTER extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -71,15 +69,15 @@ public class REGISTER extends javax.swing.JFrame {
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/shapes (1).png"))); // NOI18N
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(102, 712, -1, -1));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 620, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Artifakt Element Black", 1, 24)); // NOI18N
         jLabel3.setText("WELCOME TO");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(174, 161, -1, -1));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 120, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Artifakt Element Black", 1, 48)); // NOI18N
         jLabel4.setText("GreenBin");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(102, 161, -1, 100));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 120, -1, 100));
 
         ConfirmPassword.setBackground(new java.awt.Color(215, 215, 215));
         ConfirmPassword.setFont(new java.awt.Font("Arial Narrow", 0, 18)); // NOI18N
@@ -89,7 +87,7 @@ public class REGISTER extends javax.swing.JFrame {
                 ConfirmPasswordActionPerformed(evt);
             }
         });
-        jPanel1.add(ConfirmPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 530, 270, -1));
+        jPanel1.add(ConfirmPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 460, 270, -1));
 
         rUsername.setBackground(new java.awt.Color(215, 215, 215));
         rUsername.setFont(new java.awt.Font("Arial Narrow", 0, 18)); // NOI18N
@@ -99,7 +97,7 @@ public class REGISTER extends javax.swing.JFrame {
                 rUsernameActionPerformed(evt);
             }
         });
-        jPanel1.add(rUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 320, 270, 20));
+        jPanel1.add(rUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 240, 270, 20));
 
         Email.setBackground(new java.awt.Color(215, 215, 215));
         Email.setFont(new java.awt.Font("Arial Narrow", 0, 18)); // NOI18N
@@ -109,7 +107,7 @@ public class REGISTER extends javax.swing.JFrame {
                 EmailActionPerformed(evt);
             }
         });
-        jPanel1.add(Email, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 390, 270, -1));
+        jPanel1.add(Email, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 320, 270, -1));
 
         Password.setBackground(new java.awt.Color(215, 215, 215));
         Password.setFont(new java.awt.Font("Arial Narrow", 0, 18)); // NOI18N
@@ -119,7 +117,7 @@ public class REGISTER extends javax.swing.JFrame {
                 PasswordActionPerformed(evt);
             }
         });
-        jPanel1.add(Password, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 460, 270, -1));
+        jPanel1.add(Password, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 390, 270, -1));
 
         SIGNUP.setBackground(new java.awt.Color(55, 185, 67));
         SIGNUP.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
@@ -130,16 +128,16 @@ public class REGISTER extends javax.swing.JFrame {
                 SIGNUPActionPerformed(evt);
             }
         });
-        jPanel1.add(SIGNUP, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 590, 179, 42));
+        jPanel1.add(SIGNUP, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 510, 179, 42));
 
         jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/password.png"))); // NOI18N
-        jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 530, -1, -1));
+        jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 460, -1, -1));
 
         jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/password.png"))); // NOI18N
-        jPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 460, -1, -1));
+        jPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 390, -1, -1));
 
         jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/email.png"))); // NOI18N
-        jPanel1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 390, 20, 20));
+        jPanel1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 320, 20, 20));
 
         jLabel5.setForeground(new java.awt.Color(0, 0, 255));
         jLabel5.setText("LOGIN");
@@ -148,50 +146,41 @@ public class REGISTER extends javax.swing.JFrame {
                 jLabel5MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 640, -1, -1));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 560, -1, -1));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/Rectangle 7.png"))); // NOI18N
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 380, 320, -1));
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, 320, -1));
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/Rectangle 7.png"))); // NOI18N
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 450, -1, -1));
-
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/Rectangle 7.png"))); // NOI18N
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 380, 310, -1));
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 380, -1, -1));
 
         jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/user.png"))); // NOI18N
-        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 320, -1, -1));
+        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 240, -1, -1));
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/Rectangle 7.png"))); // NOI18N
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 520, -1, -1));
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 450, -1, -1));
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/Rectangle 7.png"))); // NOI18N
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 310, -1, -1));
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, -1, -1));
 
         jLabel11.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
         jLabel11.setText("Confirm Password");
-        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 500, -1, -1));
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 430, -1, -1));
 
         jLabel12.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
         jLabel12.setText("Username");
-        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 290, -1, -1));
+        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 200, -1, -1));
 
         jLabel13.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
         jLabel13.setText("Email Address");
-        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, -1, -1));
+        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 280, -1, -1));
 
         jLabel14.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
         jLabel14.setText("Password");
-        jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 430, -1, -1));
-
-        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/user.png"))); // NOI18N
-        jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 320, -1, -1));
-
-        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/password.png"))); // NOI18N
-        jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 460, -1, -1));
+        jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, -1, -1));
 
         jLabel21.setText("Already have an account?");
-        jPanel1.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 640, -1, -1));
+        jPanel1.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 560, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -204,7 +193,7 @@ public class REGISTER extends javax.swing.JFrame {
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        setSize(new java.awt.Dimension(406, 852));
+        setSize(new java.awt.Dimension(406, 758));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -303,9 +292,7 @@ public class REGISTER extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
@@ -315,7 +302,6 @@ public class REGISTER extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField rUsername;

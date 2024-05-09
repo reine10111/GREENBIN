@@ -38,6 +38,8 @@ public class START extends javax.swing.JFrame {
         getstarted = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
+        setSize(new java.awt.Dimension(390, 750));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 

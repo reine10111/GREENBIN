@@ -60,6 +60,9 @@ public class LOGIN extends javax.swing.JFrame {
         jLabel4.setText("GreenBin");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(390, 750));
+        setResizable(false);
+        setSize(new java.awt.Dimension(390, 750));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -151,7 +154,7 @@ public class LOGIN extends javax.swing.JFrame {
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        setSize(new java.awt.Dimension(406, 758));
+        setSize(new java.awt.Dimension(390, 758));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -253,6 +256,17 @@ public class LOGIN extends javax.swing.JFrame {
                     //display HOMR of new page after login.
                     dispose();
                     HOME h = new HOME();
+                    h.pack();
+                    h.setLocationRelativeTo(null);
+                    h.first_name.setText(res.getString("first_name"));
+                    h.last_name.setText(res.getString("last_name"));
+                    h.email.setText(res.getString("email"));
+                    h.user.setText(res.getString("username"));
+                    h.jPosition.setText(res.getString("position"));
+                   
+
+
+
                     h.setVisible(true);
 
             }else{

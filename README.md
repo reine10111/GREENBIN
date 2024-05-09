@@ -21,6 +21,8 @@ The GreenBin project offers several benefits to both users and communities. Firs
   * Dispose of waste responsibly: Use the app to input waste items and receive instant valuation. Dispose of your waste responsibly and earn rewards in the process.
   * Enjoy: Enjoy disposing your waste properly and earn funds from it.
 
+#  📽️ WALKTHROUGH
+
 # 💻 TOOLS USED IN THIS PROJECT:
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![NetBeans IDE](https://img.shields.io/badge/NetBeansIDE-1B6AC6.svg?style=for-the-badge&logo=apache-netbeans-ide&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-%2300000f.svg?style=for-the-badge&logo=mysql&logoColor=white) ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
 
@@ -35,8 +37,10 @@ For urgent concerns, email us at greenbin202404@gmail.com
    
    The GreenBin project is maintained and contributed to by a dedicated team committed to promoting sustainability and environmental responsibility.
 
-   * ![shang](https://github.com/reine10111/GREENBIN/assets/167085294/fac9b4df-6de0-4437-b183-51e6cdfaf7e6)
-     ![ella](https://github.com/reine10111/GREENBIN/assets/167085294/add3ae8b-b5d5-4aa9-b65e-cc220c96bfa4)
-     ![JUWE](https://github.com/reine10111/GREENBIN/assets/167085294/228e1e3e-38ab-4503-af0b-dc455eadc9b9)
-     ![CAWEN](https://github.com/reine10111/GREENBIN/assets/167085294/f68e57b1-7ea5-4021-9676-37270963b10d)
-     ![moDRA](https://github.com/reine10111/GREENBIN/assets/167085294/0263442c-939d-4daa-8d50-4bfb71152719)
+   * Ms. Geraldine Cabangahan 
+   * Ms. Trisha Mae Cebusana
+   * Mr. Joey Saloza
+   * Ms. Caren A. Suarez
+   * Ms. Ellayza Reine Wagan
+   
+   Contributions from developers, designers, and environmental enthusiasts are welcome and encouraged.

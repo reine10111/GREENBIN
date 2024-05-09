@@ -213,6 +213,30 @@ public class HOME extends javax.swing.JFrame {
         jLabel64 = new javax.swing.JLabel();
         jTxtime = new javax.swing.JLabel();
         jDate = new javax.swing.JLabel();
+        Profilej = new javax.swing.JPanel();
+        jLabel130 = new javax.swing.JLabel();
+        jLabel116 = new javax.swing.JLabel();
+        jLabel132 = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel97 = new javax.swing.JLabel();
+        jLabel96 = new javax.swing.JLabel();
+        jLabel98 = new javax.swing.JLabel();
+        jLabel99 = new javax.swing.JLabel();
+        jLabel115 = new javax.swing.JLabel();
+        jLabel129 = new javax.swing.JLabel();
+        jLabel102 = new javax.swing.JLabel();
+        jLabel101 = new javax.swing.JLabel();
+        jLabel105 = new javax.swing.JLabel();
+        jLabel106 = new javax.swing.JLabel();
+        jLabel107 = new javax.swing.JLabel();
+        jLabel104 = new javax.swing.JLabel();
+        jLabel108 = new javax.swing.JLabel();
+        jLabel109 = new javax.swing.JLabel();
+        jLabel110 = new javax.swing.JLabel();
+        jLabel111 = new javax.swing.JLabel();
+        jLabel118 = new javax.swing.JLabel();
+        jLabel128 = new javax.swing.JLabel();
+        jLabel103 = new javax.swing.JLabel();
         jCampaign = new javax.swing.JPanel();
         jLabel67 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
@@ -1226,6 +1250,109 @@ public class HOME extends javax.swing.JFrame {
 
         jPanel2.add(jFront, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
+        Profilej.setBackground(new java.awt.Color(255, 255, 255));
+        Profilej.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel130.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel130.setText("Last Name");
+        Profilej.add(jLabel130, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 340, 150, 20));
+
+        jLabel116.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/HOME/PngItem_587137 1.png"))); // NOI18N
+        Profilej.add(jLabel116, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 540, 40, -1));
+
+        jLabel132.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel132.setText("Email Address");
+        Profilej.add(jLabel132, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 410, 330, 20));
+
+        jPanel3.setBackground(new java.awt.Color(55, 185, 67));
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel97.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/HOME/emojipng 1.png"))); // NOI18N
+        jPanel3.add(jLabel97, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 90, -1, -1));
+
+        jLabel96.setFont(new java.awt.Font("Artifakt Element Heavy", 1, 24)); // NOI18N
+        jLabel96.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel96.setText("YOUR PROFILE");
+        jPanel3.add(jLabel96, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 10, 200, 40));
+
+        jLabel98.setFont(new java.awt.Font("Artifakt Element Heavy", 1, 24)); // NOI18N
+        jLabel98.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel98.setText("HI!");
+        jPanel3.add(jLabel98, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 210, 50, 40));
+
+        jLabel99.setFont(new java.awt.Font("Artifakt Element Heavy", 1, 24)); // NOI18N
+        jLabel99.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel99.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/shapes.png"))); // NOI18N
+        jPanel3.add(jLabel99, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -40, 280, 160));
+
+        jLabel115.setFont(new java.awt.Font("Artifakt Element Heavy", 1, 24)); // NOI18N
+        jLabel115.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel115.setText("USER");
+        jPanel3.add(jLabel115, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 210, 130, 40));
+
+        Profilej.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 390, 280));
+
+        jLabel129.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel129.setText("Position");
+        Profilej.add(jLabel129, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 480, 330, 20));
+
+        jLabel102.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/shapes (1).png"))); // NOI18N
+        Profilej.add(jLabel102, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 640, -1, -1));
+
+        jLabel101.setFont(new java.awt.Font("Artifakt Element Heavy", 1, 24)); // NOI18N
+        jLabel101.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel101.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/HOME/Group 23.png"))); // NOI18N
+        Profilej.add(jLabel101, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 330, 170, 40));
+
+        jLabel105.setFont(new java.awt.Font("Century Gothic", 1, 20)); // NOI18N
+        jLabel105.setText("OFFICIALS");
+        Profilej.add(jLabel105, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 540, 200, 30));
+
+        jLabel106.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
+        jLabel106.setText("Last Name");
+        Profilej.add(jLabel106, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 310, -1, -1));
+
+        jLabel107.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
+        jLabel107.setText("Position");
+        Profilej.add(jLabel107, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 450, -1, -1));
+
+        jLabel104.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel104.setText("First Name");
+        Profilej.add(jLabel104, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 340, 150, 20));
+
+        jLabel108.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        jLabel108.setForeground(new java.awt.Color(51, 102, 255));
+        jLabel108.setText("SIGN OUT");
+        Profilej.add(jLabel108, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 720, 70, 20));
+
+        jLabel109.setFont(new java.awt.Font("Artifakt Element Heavy", 1, 24)); // NOI18N
+        jLabel109.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel109.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/HOME/Group 26.png"))); // NOI18N
+        Profilej.add(jLabel109, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 400, 400, 40));
+
+        jLabel110.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
+        jLabel110.setText("Email Address");
+        Profilej.add(jLabel110, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 380, -1, -1));
+
+        jLabel111.setFont(new java.awt.Font("Artifakt Element Heavy", 1, 24)); // NOI18N
+        jLabel111.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel111.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/HOME/Group 26.png"))); // NOI18N
+        Profilej.add(jLabel111, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 470, 400, 40));
+
+        jLabel118.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/HOME/Group 26 (1).png"))); // NOI18N
+        Profilej.add(jLabel118, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 530, -1, 50));
+
+        jLabel128.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
+        jLabel128.setText("First Name");
+        Profilej.add(jLabel128, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, -1, -1));
+
+        jLabel103.setFont(new java.awt.Font("Artifakt Element Heavy", 1, 24)); // NOI18N
+        jLabel103.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel103.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/HOME/Group 23.png"))); // NOI18N
+        Profilej.add(jLabel103, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 330, 170, 40));
+
+        jPanel2.add(Profilej, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 450, -1, -1));
+
         jCampaign.setBackground(new java.awt.Color(255, 255, 255));
         jCampaign.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -1623,7 +1750,7 @@ public class HOME extends javax.swing.JFrame {
         jFront.setVisible(false);
         jAbout.setVisible(false);
         jCampaign.setVisible(false);
-        jOfficials.setVisible(true);
+        Profilej.setVisible(true);
 
     }//GEN-LAST:event_jProfileMouseClicked
 
@@ -1665,6 +1792,7 @@ public class HOME extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel BARANGAY;
+    private javax.swing.JPanel Profilej;
     private javax.swing.JButton btnReset;
     private javax.swing.JPanel jAbout;
     private javax.swing.JLabel jAboutUs;
@@ -1694,11 +1822,25 @@ public class HOME extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel100;
+    private javax.swing.JLabel jLabel101;
+    private javax.swing.JLabel jLabel102;
+    private javax.swing.JLabel jLabel103;
+    private javax.swing.JLabel jLabel104;
+    private javax.swing.JLabel jLabel105;
+    private javax.swing.JLabel jLabel106;
+    private javax.swing.JLabel jLabel107;
+    private javax.swing.JLabel jLabel108;
+    private javax.swing.JLabel jLabel109;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel110;
+    private javax.swing.JLabel jLabel111;
     private javax.swing.JLabel jLabel112;
     private javax.swing.JLabel jLabel113;
     private javax.swing.JLabel jLabel114;
+    private javax.swing.JLabel jLabel115;
+    private javax.swing.JLabel jLabel116;
     private javax.swing.JLabel jLabel117;
+    private javax.swing.JLabel jLabel118;
     private javax.swing.JLabel jLabel119;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel120;
@@ -1709,8 +1851,12 @@ public class HOME extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel125;
     private javax.swing.JLabel jLabel126;
     private javax.swing.JLabel jLabel127;
+    private javax.swing.JLabel jLabel128;
+    private javax.swing.JLabel jLabel129;
     private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel130;
     private javax.swing.JLabel jLabel131;
+    private javax.swing.JLabel jLabel132;
     private javax.swing.JLabel jLabel136;
     private javax.swing.JLabel jLabel139;
     private javax.swing.JLabel jLabel14;
@@ -1811,12 +1957,17 @@ public class HOME extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel93;
     private javax.swing.JLabel jLabel94;
     private javax.swing.JLabel jLabel95;
+    private javax.swing.JLabel jLabel96;
+    private javax.swing.JLabel jLabel97;
+    private javax.swing.JLabel jLabel98;
+    private javax.swing.JLabel jLabel99;
     private javax.swing.JLabel jMessage;
     private javax.swing.JPanel jMetals;
     private javax.swing.JPanel jOfficials;
     private javax.swing.JPanel jPBottles;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
     private javax.swing.JLabel jProfile;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSpinner jSpinner1;

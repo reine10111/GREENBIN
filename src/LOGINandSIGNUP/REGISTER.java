@@ -51,14 +51,27 @@ public class REGISTER extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
+        jPosition = new javax.swing.JComboBox<>();
         jLabel15 = new javax.swing.JLabel();
+        jFirst = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jLast = new javax.swing.JTextField();
         jLabel21 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -69,15 +82,15 @@ public class REGISTER extends javax.swing.JFrame {
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/shapes (1).png"))); // NOI18N
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 620, -1, -1));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 660, 310, 140));
 
         jLabel3.setFont(new java.awt.Font("Artifakt Element Black", 1, 24)); // NOI18N
         jLabel3.setText("WELCOME TO");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 120, -1, -1));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 80, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Artifakt Element Black", 1, 48)); // NOI18N
         jLabel4.setText("GreenBin");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 120, -1, 100));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 110, -1, 50));
 
         ConfirmPassword.setBackground(new java.awt.Color(215, 215, 215));
         ConfirmPassword.setFont(new java.awt.Font("Arial Narrow", 0, 18)); // NOI18N
@@ -87,7 +100,7 @@ public class REGISTER extends javax.swing.JFrame {
                 ConfirmPasswordActionPerformed(evt);
             }
         });
-        jPanel1.add(ConfirmPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 460, 270, -1));
+        jPanel1.add(ConfirmPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 570, 270, -1));
 
         rUsername.setBackground(new java.awt.Color(215, 215, 215));
         rUsername.setFont(new java.awt.Font("Arial Narrow", 0, 18)); // NOI18N
@@ -97,7 +110,7 @@ public class REGISTER extends javax.swing.JFrame {
                 rUsernameActionPerformed(evt);
             }
         });
-        jPanel1.add(rUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 240, 270, 20));
+        jPanel1.add(rUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 330, 260, 20));
 
         Email.setBackground(new java.awt.Color(215, 215, 215));
         Email.setFont(new java.awt.Font("Arial Narrow", 0, 18)); // NOI18N
@@ -107,7 +120,7 @@ public class REGISTER extends javax.swing.JFrame {
                 EmailActionPerformed(evt);
             }
         });
-        jPanel1.add(Email, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 320, 270, -1));
+        jPanel1.add(Email, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 450, 270, -1));
 
         Password.setBackground(new java.awt.Color(215, 215, 215));
         Password.setFont(new java.awt.Font("Arial Narrow", 0, 18)); // NOI18N
@@ -117,7 +130,7 @@ public class REGISTER extends javax.swing.JFrame {
                 PasswordActionPerformed(evt);
             }
         });
-        jPanel1.add(Password, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 390, 270, -1));
+        jPanel1.add(Password, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 510, 270, -1));
 
         SIGNUP.setBackground(new java.awt.Color(55, 185, 67));
         SIGNUP.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
@@ -128,16 +141,16 @@ public class REGISTER extends javax.swing.JFrame {
                 SIGNUPActionPerformed(evt);
             }
         });
-        jPanel1.add(SIGNUP, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 510, 179, 42));
+        jPanel1.add(SIGNUP, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 610, 179, 42));
 
         jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/password.png"))); // NOI18N
-        jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 460, -1, -1));
+        jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 570, -1, -1));
 
         jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/password.png"))); // NOI18N
-        jPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 390, -1, -1));
+        jPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 510, -1, -1));
 
         jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/email.png"))); // NOI18N
-        jPanel1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 320, 20, 20));
+        jPanel1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 450, 20, 20));
 
         jLabel5.setForeground(new java.awt.Color(0, 0, 255));
         jLabel5.setText("LOGIN");
@@ -146,41 +159,103 @@ public class REGISTER extends javax.swing.JFrame {
                 jLabel5MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 560, -1, -1));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 660, -1, -1));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/Rectangle 7.png"))); // NOI18N
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, 320, -1));
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 440, 320, -1));
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/Rectangle 7.png"))); // NOI18N
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 380, -1, -1));
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 500, -1, -1));
+
+        jPosition.setBackground(new java.awt.Color(215, 215, 215));
+        jPosition.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Chairman", "Councilor", "Secretary", "Treasurer", "Brgy. Tanod" }));
+        jPosition.setBorder(null);
+        jPosition.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jPositionActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jPosition, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 390, 260, -1));
 
         jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/user.png"))); // NOI18N
-        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 240, -1, -1));
+        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 330, -1, -1));
+
+        jFirst.setBackground(new java.awt.Color(215, 215, 215));
+        jFirst.setBorder(null);
+        jFirst.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jFirstActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jFirst, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 210, 250, 20));
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/Rectangle 7.png"))); // NOI18N
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 450, -1, -1));
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 560, -1, -1));
+
+        jLabel27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/user.png"))); // NOI18N
+        jPanel1.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 390, -1, -1));
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/Rectangle 7.png"))); // NOI18N
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, -1, -1));
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 380, -1, -1));
 
         jLabel11.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
         jLabel11.setText("Confirm Password");
-        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 430, -1, -1));
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 540, -1, -1));
 
         jLabel12.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
-        jLabel12.setText("Username");
-        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 200, -1, -1));
+        jLabel12.setText("Position");
+        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 360, -1, -1));
 
         jLabel13.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
         jLabel13.setText("Email Address");
-        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 280, -1, -1));
+        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 420, -1, -1));
 
         jLabel14.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
         jLabel14.setText("Password");
-        jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, -1, -1));
+        jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 480, -1, -1));
+
+        jLabel26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/user.png"))); // NOI18N
+        jPanel1.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 210, -1, -1));
+
+        jLast.setBackground(new java.awt.Color(215, 215, 215));
+        jLast.setBorder(null);
+        jPanel1.add(jLast, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 270, 260, 20));
 
         jLabel21.setText("Already have an account?");
-        jPanel1.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 560, -1, -1));
+        jPanel1.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 660, -1, -1));
+
+        jTextField1.setBackground(new java.awt.Color(215, 215, 215));
+        jTextField1.setBorder(null);
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 210, 260, -1));
+
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/Rectangle 7.png"))); // NOI18N
+        jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, -1, -1));
+
+        jLabel18.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
+        jLabel18.setText("First Name");
+        jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 180, -1, -1));
+
+        jLabel28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/user.png"))); // NOI18N
+        jPanel1.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 270, -1, -1));
+
+        jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/Rectangle 7.png"))); // NOI18N
+        jPanel1.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 320, -1, -1));
+
+        jLabel23.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
+        jLabel23.setText("Username");
+        jPanel1.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 300, -1, -1));
+
+        jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/Rectangle 7.png"))); // NOI18N
+        jPanel1.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, -1, -1));
+
+        jLabel25.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
+        jLabel25.setText("Last Name");
+        jPanel1.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 240, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -218,32 +293,47 @@ public class REGISTER extends javax.swing.JFrame {
         
         String rusername = rUsername.getText();
         String email = Email.getText();
-
         String password = Password.getText();
         String confirm_password = ConfirmPassword.getText();
-
+        String first_name = jFirst.getText();
+        String last_name = jLast.getText();
+        String position = (String) jPosition.getSelectedItem();
+        
         boolean passwordsMatch = checkPasswordMatch(password, confirm_password);
         
-        if (!passwordsMatch){
+        if (!passwordsMatch) {
             JOptionPane.showMessageDialog(this, "Password and Confirm Password do not match.", "Error", JOptionPane.ERROR_MESSAGE);
             return;
         }
-        if(rusername.isEmpty() || email.isEmpty() || password.isEmpty() || confirm_password.isEmpty()){
-            JOptionPane.showMessageDialog(this, "Username / Password should not be empty.", "Error", JOptionPane.ERROR_MESSAGE);
-        }else {
-            userRegister(rusername, email, password, confirm_password);
+        if (rusername.isEmpty() || email.isEmpty() || password.isEmpty() || confirm_password.isEmpty() || first_name.isEmpty() || last_name.isEmpty() || position.isEmpty()) {
+            JOptionPane.showMessageDialog(this, "All fields are required.", "Error", JOptionPane.ERROR_MESSAGE);
+            return;
         }
+        userRegister(rusername, email, password, first_name, last_name, position);
+
         
     }//GEN-LAST:event_SIGNUPActionPerformed
 
     private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
-        LOGIN lg = new LOGIN ();
-        lg.setVisible (true) ;
+        LOGIN lg = new LOGIN();
+        lg.setVisible(true);
         lg.pack();
         lg.setLocationRelativeTo(null);
-        lg.setDefaultCloseOperation (LOGIN.EXIT_ON_CLOSE);
-        this.dispose ();
+        lg.setDefaultCloseOperation(LOGIN.EXIT_ON_CLOSE);
+        this.dispose();
     }//GEN-LAST:event_jLabel5MouseClicked
+
+    private void jPositionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPositionActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPositionActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jFirstActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFirstActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jFirstActionPerformed
 
     /**
      * @param args the command line arguments
@@ -285,6 +375,7 @@ public class REGISTER extends javax.swing.JFrame {
     private javax.swing.JTextField Email;
     private javax.swing.JTextField Password;
     private javax.swing.JButton SIGNUP;
+    private javax.swing.JTextField jFirst;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -292,18 +383,30 @@ public class REGISTER extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JTextField jLast;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JComboBox<String> jPosition;
+    private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField rUsername;
     // End of variables declaration//GEN-END:variables
 
@@ -311,69 +414,40 @@ public class REGISTER extends javax.swing.JFrame {
         return password.equals(confirm_password);
     }
 
-    private void userRegister(String rusername, String email, String password, String confirm_password) {
-    Connection dbconn = DBConnection.connectDB();
-    if (dbconn != null) {
-        try {
-            String query = "INSERT INTO users(username, email, password) VALUES (?, ?, ?)";
-            PreparedStatement st = dbconn.prepareStatement(query);
+    private void userRegister(String rusername, String email, String password, String first_name, String last_name, String position) {
+        Connection dbconn = DBConnection.connectDB();
+        if (dbconn != null) {
+            try {
+                String query = "INSERT INTO users(username, email, password, first_name, last_name, position) VALUES (?, ?, ?, ?, ?, ?)";
+                PreparedStatement st = dbconn.prepareStatement(query);
 
-            st.setString(1, rusername);
-            st.setString(2, email);
-            st.setString(3, password);
+                st.setString(1, rusername);
+                st.setString(2, email);
+                st.setString(3, password);
+                st.setString(4, first_name);
+                st.setString(5, last_name);
+                st.setString(6, position);
 
-            int rowsAffected = st.executeUpdate();
+                int rowsAffected = st.executeUpdate();
 
-            if (rowsAffected > 0) {
-                dispose();
-                LOGIN loginFrame = new LOGIN();
-                loginFrame.setVisible(true);
-                JOptionPane.showMessageDialog(this, "User Data Inserted", "Success", JOptionPane.INFORMATION_MESSAGE);
-            } else {
-                JOptionPane.showMessageDialog(this, "Please try again.", "Error", JOptionPane.ERROR_MESSAGE);
+                if (rowsAffected > 0) {
+                    dispose();
+                    LOGIN loginFrame = new LOGIN();
+                    loginFrame.setVisible(true);
+                    JOptionPane.showMessageDialog(this, "User Data Inserted", "Success", JOptionPane.INFORMATION_MESSAGE);
+                } else {
+                    JOptionPane.showMessageDialog(this, "Please try again.", "Error", JOptionPane.ERROR_MESSAGE);
+                }
+
+                st.close();
+                dbconn.close();
+            } catch (SQLException ex) {
+                Logger.getLogger(LOGIN.class.getName()).log(Level.SEVERE, null, ex);
             }
-
-            st.close();
-            dbconn.close();
-        } catch (SQLException ex) {
-            Logger.getLogger(LOGIN.class.getName()).log(Level.SEVERE, null, ex);
+        } else {
+            System.out.println("The connection is not available.");
         }
-    } else {
-        System.out.println("The connection is not available.");
     }
-}
-
-    
-    private void updateUserProfile(String rusername, String first_name, String last_name, String number, String location) {
-    Connection dbconn = DBConnection.connectDB();
-    if (dbconn != null) {
-        try {
-            String query = "UPDATE users SET first_name = ?, last_name = ?, number = ?, location = ? WHERE username = ?";
-            PreparedStatement st = dbconn.prepareStatement(query);
-
-            st.setString(1, first_name);
-            st.setString(2, last_name);
-            st.setString(3, number);
-            st.setString(4, location);
-            st.setString(5, rusername);
-
-            int rowsAffected = st.executeUpdate();
-
-            if (rowsAffected > 0) {
-                JOptionPane.showMessageDialog(this, "User Profile Updated", "Success", JOptionPane.INFORMATION_MESSAGE);
-            } else {
-                JOptionPane.showMessageDialog(this, "Failed to update profile.", "Error", JOptionPane.ERROR_MESSAGE);
-            }
-
-            st.close();
-            dbconn.close();
-        } catch (SQLException ex) {
-            Logger.getLogger(REGISTER.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    } else {
-        System.out.println("The connection is not available.");
-    }
-}
 
 }
 

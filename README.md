@@ -34,3 +34,9 @@ For urgent concerns, email us at greenbin202404@gmail.com
 # 👤 WHO MAINTAINS AND CONTRIBUTES TO THE PROJECT?
    
    The GreenBin project is maintained and contributed to by a dedicated team committed to promoting sustainability and environmental responsibility.
+
+   * ![shang](https://github.com/reine10111/GREENBIN/assets/167085294/fac9b4df-6de0-4437-b183-51e6cdfaf7e6)
+     ![ella](https://github.com/reine10111/GREENBIN/assets/167085294/add3ae8b-b5d5-4aa9-b65e-cc220c96bfa4)
+     ![JUWE](https://github.com/reine10111/GREENBIN/assets/167085294/228e1e3e-38ab-4503-af0b-dc455eadc9b9)
+     ![CAWEN](https://github.com/reine10111/GREENBIN/assets/167085294/f68e57b1-7ea5-4021-9676-37270963b10d)
+     ![moDRA](https://github.com/reine10111/GREENBIN/assets/167085294/0263442c-939d-4daa-8d50-4bfb71152719)

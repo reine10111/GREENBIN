@@ -12,6 +12,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import LOGINandSIGNUP.DBConnection;
+import javax.swing.JPanel;
 
 
 /**
@@ -22,10 +23,24 @@ public class TOTAL extends javax.swing.JFrame {
     private String time;
     private String date;
     private double totalAmount; 
+    
+    private HOME homeInstance;
+
+
+    public TOTAL(HOME homeInstance) {
+        this.homeInstance = homeInstance;
+        initComponents();
+        totalAmount = 0.0; 
+    }
+
+
     /**
      * Creates new form TOTAL
      */
+
+    
     public TOTAL() {
+        
         initComponents();
         totalAmount = 0.0; 
         
@@ -100,8 +115,8 @@ public class TOTAL extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        Print = new javax.swing.JButton();
+        Back = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea = new javax.swing.JTextArea();
 
@@ -112,23 +127,23 @@ public class TOTAL extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Artifakt Element Black", 1, 48)); // NOI18N
         jLabel2.setText("GreenBin");
 
-        jButton1.setBackground(new java.awt.Color(82, 130, 101));
-        jButton1.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Print");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        Print.setBackground(new java.awt.Color(82, 130, 101));
+        Print.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
+        Print.setForeground(new java.awt.Color(255, 255, 255));
+        Print.setText("Print");
+        Print.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                PrintActionPerformed(evt);
             }
         });
 
-        jButton2.setBackground(new java.awt.Color(255, 102, 102));
-        jButton2.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Back");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        Back.setBackground(new java.awt.Color(255, 102, 102));
+        Back.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
+        Back.setForeground(new java.awt.Color(255, 255, 255));
+        Back.setText("Back");
+        Back.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                BackActionPerformed(evt);
             }
         });
 
@@ -149,9 +164,9 @@ public class TOTAL extends javax.swing.JFrame {
                         .addGap(75, 75, 75)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Print, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(Back, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jLabel2)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(51, 51, 51)
@@ -168,8 +183,8 @@ public class TOTAL extends javax.swing.JFrame {
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 366, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
+                    .addComponent(Print)
+                    .addComponent(Back))
                 .addGap(22, 22, 22))
         );
 
@@ -177,41 +192,37 @@ public class TOTAL extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-        HOME h = new HOME ();
-        h.setVisible (true) ;
-        h.pack();
-        h.setLocationRelativeTo(null);
-        h.setDefaultCloseOperation (HOME.EXIT_ON_CLOSE);
-        this.dispose();
-    }//GEN-LAST:event_jButton2ActionPerformed
+        public void switchToPanel(JPanel panel) {
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        if(totalAmount!=0){
-            try {
-            // TODO add your handling code here:
+
+        panel.setVisible(true);
+    }
+    private void BackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackActionPerformed
+        // TODO add your handling code here:
+        // Dispose of the frame
+        this.setVisible(false);
+        // Show the HOME frame
+        homeInstance.setVisible(true);
+    }//GEN-LAST:event_BackActionPerformed
+
+    private void PrintActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PrintActionPerformed
+        if (totalAmount != 0) {
+        try {
+            // Print the content of the JTextArea
             jTextArea.print();
             JOptionPane.showMessageDialog(null, "Print successful!");
-            HOME h = new HOME ();
-            h.setVisible (true) ;
-            h.pack();
-            h.setLocationRelativeTo(null);
-            h.setDefaultCloseOperation (HOME.EXIT_ON_CLOSE);
-            this.dispose();
-
-
+            this.setVisible(false);
+            // Show the HOME frame
+        homeInstance.setVisible(true);
         } catch (PrinterException ex) {
-            Logger.getLogger(TOTAL.class.getName()).log(Level.SEVERE, null, ex);
+            ex.printStackTrace(); // Log the error
             JOptionPane.showMessageDialog(null, "Error printing: " + ex.getMessage());
-
         }
-        }else{
-            JOptionPane.showMessageDialog(null,"You haven't purchased any product");
-
-        }
+    } else {
+        JOptionPane.showMessageDialog(null, "You haven't purchased any product");
+    }
         
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_PrintActionPerformed
 
     /**
      * @param args the command line arguments
@@ -249,8 +260,8 @@ public class TOTAL extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    public javax.swing.JButton Back;
+    public javax.swing.JButton Print;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;

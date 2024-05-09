@@ -25,31 +25,31 @@ import javax.swing.JPanel;
  */
 public class HOME extends javax.swing.JFrame {
     public String loggedInUsername;
-
-
-
+    
     
     /**
      * Creates new form HOME
      */
     
-    
+    public HOME getHomeInstance() {
+    return this;
+}
+
+
     public HOME() {
-        setUndecorated(true);
-        initComponents();
-        jFront.setVisible(true);
-        jAbout.setVisible(false);
-        jCampaign.setVisible(false);
-        jOfficials.setVisible(false);
-        Profilej.setVisible(false);
+            setUndecorated(true);
+    initComponents();
+    jFront.setVisible(true);
+    jAbout.setVisible(false);
+    jCampaign.setVisible(false);
+    jOfficials.setVisible(false);
+    Profilej.setVisible(false);
 
-        
+    totalInstance = new TOTAL(this);
+    init();
 
-        init();
-        totalInstance = new TOTAL();
     }
     
-
 
 
 
@@ -228,7 +228,7 @@ public class HOME extends javax.swing.JFrame {
         jLabel51 = new javax.swing.JLabel();
         jCheckBox10 = new javax.swing.JCheckBox();
         jLabel63 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        total = new javax.swing.JButton();
         btnReset = new javax.swing.JButton();
         jLabel52 = new javax.swing.JLabel();
         jLabel53 = new javax.swing.JLabel();
@@ -1142,13 +1142,13 @@ public class HOME extends javax.swing.JFrame {
                 .addGap(7, 7, 7))
         );
 
-        jButton1.setBackground(new java.awt.Color(82, 130, 101));
-        jButton1.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Total");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        total.setBackground(new java.awt.Color(82, 130, 101));
+        total.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
+        total.setForeground(new java.awt.Color(255, 255, 255));
+        total.setText("Total");
+        total.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                totalActionPerformed(evt);
             }
         });
 
@@ -1183,7 +1183,7 @@ public class HOME extends javax.swing.JFrame {
                     .addComponent(jFWastes, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jAppliances, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(total, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(16, 16, 16)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -1251,7 +1251,7 @@ public class HOME extends javax.swing.JFrame {
                     .addComponent(jFabrics, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(27, 27, 27)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(total, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnReset, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(23, 23, 23))
         );
@@ -1599,6 +1599,8 @@ public class HOME extends javax.swing.JFrame {
         jOfficials.setVisible(false);
         Profilej.setVisible(false);
 
+        
+        
         panel.setVisible(true);
     }
     private void jHomeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jHomeMouseClicked
@@ -1746,16 +1748,17 @@ public class HOME extends javax.swing.JFrame {
             }
     }//GEN-LAST:event_jCheckBox10ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void totalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_totalActionPerformed
         // TODO add your handling code here:
         totalInstance.setVisible(true);
         totalInstance.pack();
         totalInstance.setLocationRelativeTo(null);
         totalInstance.setDefaultCloseOperation (TOTAL.EXIT_ON_CLOSE);
         totalInstance.displayTotal();
+        
         this.dispose();
 
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_totalActionPerformed
 
     private void btnResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResetActionPerformed
         // TODO add your handling code here:
@@ -1874,13 +1877,12 @@ public class HOME extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel BARANGAY;
     private javax.swing.JPanel Profilej;
-    private javax.swing.JButton btnReset;
+    public javax.swing.JButton btnReset;
     public javax.swing.JLabel email;
     public javax.swing.JLabel first_name;
     private javax.swing.JPanel jAbout;
     private javax.swing.JLabel jAboutUs;
     private javax.swing.JPanel jAppliances;
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JPanel jCPapers;
     private javax.swing.JPanel jCampaign;
@@ -1899,7 +1901,7 @@ public class HOME extends javax.swing.JFrame {
     private javax.swing.JLabel jDate;
     private javax.swing.JPanel jFWastes;
     private javax.swing.JPanel jFabrics;
-    private javax.swing.JPanel jFront;
+    public javax.swing.JPanel jFront;
     private javax.swing.JPanel jGBottles;
     private javax.swing.JLabel jHome;
     private javax.swing.JLabel jLabel1;
@@ -2063,6 +2065,7 @@ public class HOME extends javax.swing.JFrame {
     private javax.swing.JPanel jWPapers;
     public javax.swing.JLabel last_name;
     private javax.swing.JLabel price1;
+    private javax.swing.JButton total;
     public javax.swing.JLabel user;
     // End of variables declaration//GEN-END:variables
 }

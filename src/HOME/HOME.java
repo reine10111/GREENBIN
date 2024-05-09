@@ -318,7 +318,6 @@ public class HOME extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(390, 750));
-        setResizable(false);
         setSize(new java.awt.Dimension(390, 750));
 
         jPanel2.setPreferredSize(new java.awt.Dimension(390, 750));

@@ -32,17 +32,17 @@ The GreenBin project offers several benefits to both users and communities. Firs
 <!-- YouTube video cards from https://github.com/DenverCoder1/github-readme-youtube-cards -->
 <!-- https://ytcards.demolab.com/?id=<video ID>&title=<video+title>&lang=en&timestamp=<video publish date in Unix time format>&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&max_title_lines=1&width=250&border_radius=5&duration=<video duration in seconds> "<video title>") -->
 <!-- BEGIN YOUTUBE-CARDS -->
-[![What is Greenbin?](https://ytcards.demolab.com/?id=c8tAq2wrDhQ&title=5+things+I+wish+I+knew+before+studying+Computer+Science&lang=en&timestamp=1715270400&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&max_title_lines=1&width=250&border_radius=5&duration=436 "What is Greenbin?")](https://youtu.be/c8tAq2wrDhQ?si=qc7U_K14CjlEuhnV)
+[![What is Greenbin?](https://ytcards.demolab.com/?id=c8tAq2wrDhQ&title=What+is+Greenbin?&lang=en&timestamp=1715270400&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&max_title_lines=1&width=250&border_radius=5&duration=436 "What is Greenbin?")](https://youtu.be/c8tAq2wrDhQ?si=qc7U_K14CjlEuhnV)
 <!-- END YOUTUBE-CARDS -->
 
 #  ✈️ JOURNEY IN MAKING THE GREENBIN
 <!-- YouTube video cards from https://github.com/DenverCoder1/github-readme-youtube-cards -->
 <!-- https://ytcards.demolab.com/?id=<video ID>&title=<video+title>&lang=en&timestamp=<video publish date in Unix time format>&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&max_title_lines=1&width=250&border_radius=5&duration=<video duration in seconds> "<video title>") -->
 <!-- BEGIN YOUTUBE-CARDS -->
-[![What is Greenbin?](https://ytcards.demolab.com/?id=c8tAq2wrDhQ&title=5+things+I+wish+I+knew+before+studying+Computer+Science&lang=en&timestamp=1715270400&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&max_title_lines=1&width=250&border_radius=5&duration=436 "What is Greenbin?")](https://youtu.be/c8tAq2wrDhQ?si=qc7U_K14CjlEuhnV)
+[![What is Greenbin?](https://ytcards.demolab.com/?id=Wa_wInO7MJQ&title=GREENBIN+JOURNEY&lang=en&timestamp=1715270400&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&max_title_lines=1&width=250&border_radius=5&duration=436 "GREENBIN JOURNEY")](https://youtu.be/Wa_wInO7MJQ?si=lJDA7lyup8ZWZa3C)
 <!-- END YOUTUBE-CARDS -->
 
-# 💻 TOOLS USED IN THIS PROJECT:
+# 💻 TECHNOLOGIES USED
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![NetBeans IDE](https://img.shields.io/badge/NetBeansIDE-1B6AC6.svg?style=for-the-badge&logo=apache-netbeans-ide&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-%2300000f.svg?style=for-the-badge&logo=mysql&logoColor=white) ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
 
 # 🌐 SOCIALS

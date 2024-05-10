@@ -14,7 +14,7 @@ The GreenBin project offers several benefits to both users and communities. Firs
   * SDG 14: Life Below Water
   * SDG 15: Life on Land
 
-# ❓HOW USERS CAN GET STARTED WITH THIS PROJECT?
+# ❓HOW USERS CAN GET STARTED WITH GREENBIN?
   Getting started with the GreenBin project is simple:
 
   * Create an account: Sign up for a GreenBin account to start using the platform.
@@ -22,6 +22,13 @@ The GreenBin project offers several benefits to both users and communities. Firs
   * Enjoy: Enjoy disposing your waste properly and earn funds from it.
 
 #  📽️ WALKTHROUGH
+<!-- YouTube video cards from https://github.com/DenverCoder1/github-readme-youtube-cards -->
+<!-- https://ytcards.demolab.com/?id=<video ID>&title=<video+title>&lang=en&timestamp=<video publish date in Unix time format>&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&max_title_lines=1&width=250&border_radius=5&duration=<video duration in seconds> "<video title>") -->
+<!-- BEGIN YOUTUBE-CARDS -->
+[![What is Greenbin?](https://ytcards.demolab.com/?id=c8tAq2wrDhQ&title=5+things+I+wish+I+knew+before+studying+Computer+Science&lang=en&timestamp=1715270400&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&max_title_lines=1&width=250&border_radius=5&duration=436 "What is Greenbin?")](https://youtu.be/c8tAq2wrDhQ?si=qc7U_K14CjlEuhnV)
+<!-- END YOUTUBE-CARDS -->
+
+#  ✈️ JOURNEY IN MAKING THE GREENBIN
 <!-- YouTube video cards from https://github.com/DenverCoder1/github-readme-youtube-cards -->
 <!-- https://ytcards.demolab.com/?id=<video ID>&title=<video+title>&lang=en&timestamp=<video publish date in Unix time format>&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&max_title_lines=1&width=250&border_radius=5&duration=<video duration in seconds> "<video title>") -->
 <!-- BEGIN YOUTUBE-CARDS -->

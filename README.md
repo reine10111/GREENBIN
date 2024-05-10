@@ -1,5 +1,6 @@
-# ♻️ GREENBIN
-"Turning Trash into Treasures"
+
+<h1 align="center">♻️GREENBIN</h1>
+<p align="center">"Turning Trash into Treasures"</p>
 
 # ❓ WHAT IS GREENBIN?
 The GreenBin project is an innovative waste management platform designed to revolutionize how communities handle their waste. By assigning value to recyclable materials, incentivizing responsible waste disposal, and facilitating collaboration between individuals and barangay officials, GreenBin aims to create a sustainable and environmentally-friendly approach to waste management.
@@ -13,6 +14,12 @@ The GreenBin project offers several benefits to both users and communities. Firs
   * SDG 13: Climate Action
   * SDG 14: Life Below Water
   * SDG 15: Life on Land
+
+# 👀	VISION
+  Our vision at GreenBin is a world where waste is seen not as a problem, but as a valuable resource. We believe that by reimagining the way we handle waste, we can create a more sustainable future for our planet   and future generations.
+
+# 🎯 MISSION
+ At GreenBin, we're using technology to transform waste management, empowering users to handle various household waste types seamlessly. From organics to recyclables and hazardous materials, our platform ensures   proper disposal and recycling practices.
 
 # ❓HOW USERS CAN GET STARTED WITH GREENBIN?
   Getting started with the GreenBin project is simple:
@@ -56,3 +63,5 @@ For urgent concerns, email us at greenbin202404@gmail.com
    * Ms. Ellayza Reine Wagan
    
    Contributions from developers, designers, and environmental enthusiasts are welcome and encouraged.
+
+   © 2024 GREENBIN

@@ -8,6 +8,18 @@ The GreenBin project is an innovative waste management platform designed to revo
 # ❓ WHY GREENBIN IS USEFUL?
 The GreenBin project offers several benefits to both users and communities. Firstly, it encourages individuals to dispose of their waste responsibly by rewarding them for their actions. This not only promotes environmental responsibility but also helps keep communities clean. Additionally, by partnering with barangay officials, GreenBin creates a sustainable revenue stream for communities through the sale of recyclable materials, contributing to economic growth and development.
 
+# ❓HOW USERS CAN GET STARTED WITH GREENBIN?
+  Getting started with the GreenBin project is simple:
+
+  * Create an account: Sign up for a GreenBin account to start using the platform.
+  * Dispose of waste responsibly: Use the app to input waste items and receive instant valuation. Dispose of your waste responsibly and earn rewards in the process.
+  * Enjoy: Enjoy disposing your waste properly and earn funds from it.
+# ⭐ FEATURES
+* User Registration
+* Waste Valuation
+* Monetary Incentives
+* Campaigns
+* Barangay Integration
 # 🌍 ACHIEVED SDGs
   * SDG 11: Sustainable Cities and Communities
   * SDG 12: Responsible Consumption and Production
@@ -21,12 +33,6 @@ The GreenBin project offers several benefits to both users and communities. Firs
 # 🎯 MISSION
  At GreenBin, we're using technology to transform waste management, empowering users to handle various household waste types seamlessly. From organics to recyclables and hazardous materials, our platform ensures   proper disposal and recycling practices.
 
-# ❓HOW USERS CAN GET STARTED WITH GREENBIN?
-  Getting started with the GreenBin project is simple:
-
-  * Create an account: Sign up for a GreenBin account to start using the platform.
-  * Dispose of waste responsibly: Use the app to input waste items and receive instant valuation. Dispose of your waste responsibly and earn rewards in the process.
-  * Enjoy: Enjoy disposing your waste properly and earn funds from it.
 
 #  📽️ WALKTHROUGH
 <!-- YouTube video cards from https://github.com/DenverCoder1/github-readme-youtube-cards -->

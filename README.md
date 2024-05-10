@@ -22,6 +22,7 @@ The GreenBin project offers several benefits to both users and communities. Firs
   * Enjoy: Enjoy disposing your waste properly and earn funds from it.
 
 #  📽️ WALKTHROUGH
+ [![GREENBIN](https://img.youtube.com/vi/UEx1ogW8ci_XMLPb/0.jpg)](https://www.youtube.com/watch?v=UEx1ogW8ci_XMLPb)
 
 # 💻 TOOLS USED IN THIS PROJECT:
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![NetBeans IDE](https://img.shields.io/badge/NetBeansIDE-1B6AC6.svg?style=for-the-badge&logo=apache-netbeans-ide&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-%2300000f.svg?style=for-the-badge&logo=mysql&logoColor=white) ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
